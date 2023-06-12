@@ -1,0 +1,116 @@
+.svgs-wrap {
+	display: none;
+}
+
+.container {
+	width: 100%;
+	max-width: 100vw;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-left: auto;
+	margin-right: auto;
+
+	@include mq(576, true) {
+		max-width: 536px;
+	}
+	@include mq(768, true) {
+		max-width: 728px;
+	}
+	@include mq(992, true) {
+		max-width: 952px;
+	}
+	@include mq(1200, true) {
+		max-width: 1200px;
+	}
+}
+
+.page__body {
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+	line-height: 150%;
+	color: #000;
+
+	background-color: #fff5eb;
+}
+
+.v-hidden {
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	margin: -1px;
+}
+
+%btn {
+	text-align: center;
+	padding: 14px 40px;
+	border-radius: 5px;
+
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 139%;
+	text-transform: uppercase;
+}
+
+.btn-orange {
+	@extend %btn;
+
+	background-color: #f1821a;
+	border: 1px dashed #f1821a;
+	color: #ffffff;
+}
+
+.btn-transparent {
+	@extend %btn;
+
+	&--orange {
+		border: 2px solid #624696;
+		color: #624696;
+	}
+	&--violet {
+		border: 2px solid #f1821a;
+		color: #f1821a;
+	}
+}
+
+.section-title {
+	font-weight: 500;
+	font-size: 50px;
+	line-height: 114%;
+
+	text-align: center;
+	text-transform: uppercase;
+
+	&--orange {
+		color: #f1821a;
+	}
+	&--violet {
+		color: #624696;
+	}
+}
+
+.checked-list {
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	list-style-type: none;
+}
+
+.checked-list__item {
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-bottom: 10px;
+	background-image: url(../images/svg/check.svg);
+	background-repeat: no-repeat;
+	background-position: left top;
+
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 147%;
+	color: #624696;
+}

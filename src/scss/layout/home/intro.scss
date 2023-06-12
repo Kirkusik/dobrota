@@ -1,0 +1,43 @@
+.home-intro {
+	padding-top: 60px;
+	padding-bottom: 80px;
+}
+
+.home-intro__container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 110px;
+}
+
+.home-intro__title {
+	font-weight: 500;
+	font-size: 55px;
+	line-height: 1;
+	letter-spacing: 1px;
+
+	color: #f1821a;
+
+	margin-top: 0;
+	margin-bottom: 67px;
+}
+
+.home-intro__desc {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 120%;
+
+	color: #616161;
+
+	margin-top: 0;
+	margin-bottom: 67px;
+}
+
+.home-intro_stats {
+	grid-column: 2 / 3;
+}
+
+.home-intro__btn {
+	width: 350px;
+	display: block;
+	margin-bottom: 25px;
+}
