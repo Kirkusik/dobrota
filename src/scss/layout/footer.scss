@@ -33,6 +33,39 @@
 	display: flex;
 }
 
+.page-footer__block {
+	&:not(:first-child) {
+		padding-top: 26px;
+	}
+}
+
+.page-footer__title {
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 147%;
+	text-transform: uppercase;
+	color: #edf0ff;
+
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.page-footer__list {
+	padding-left: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+.page-footer__list-item {
+	font-size: 15px;
+	line-height: 147%;
+	color: #edf0ff;
+}
+
+.page-footer__list-link {
+	color: inherit;
+}
+
 .copyright {
 	text-align: center;
 	padding: 40px 20px;

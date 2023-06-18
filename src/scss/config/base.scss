@@ -55,13 +55,15 @@
 	font-size: 18px;
 	line-height: 139%;
 	text-transform: uppercase;
+
+	display: inline-flex;
 }
 
 .btn-orange {
 	@extend %btn;
 
 	background-color: #f1821a;
-	border: 1px dashed #f1821a;
+	border: 2px dashed #f1821a;
 	color: #ffffff;
 }
 
@@ -69,7 +71,7 @@
 	@extend %btn;
 
 	background-color: #624696;
-	border: 1px dashed #624696;
+	border: 2px dashed #624696;
 	color: #ffffff;
 }
 
