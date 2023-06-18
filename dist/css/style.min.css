@@ -390,7 +390,7 @@ template {
   margin: -1px;
 }
 
-.btn-transparent, .btn-violet, .btn-orange {
+.btn-white, .btn-transparent, .btn-violet, .btn-orange {
   text-align: center;
   padding: 14px 40px;
   border-radius: 5px;
@@ -418,6 +418,12 @@ template {
 }
 .btn-transparent--violet {
   border: 2px solid #624696;
+  color: #624696;
+}
+
+.btn-white {
+  background-color: #fff;
+  border: 1px solid #fff;
   color: #624696;
 }
 
@@ -511,6 +517,62 @@ template {
 }
 .contact-wrapper a {
   color: inherit;
+}
+
+.intro {
+  padding-top: 60px;
+  padding-bottom: 116px;
+}
+
+.breadcrumbs {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 25px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.breadcrumbs__item {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 147%;
+  color: #616161;
+}
+.breadcrumbs__item:last-child {
+  font-weight: 600;
+  color: #624696;
+}
+.breadcrumbs__item:not(:last-child) {
+  position: relative;
+}
+.breadcrumbs__item:not(:last-child)::after {
+  content: "";
+  background-image: url(../images/svg/dot.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left: calc(100% + 12px);
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+}
+
+.breadcrumbs__link {
+  color: inherit;
+}
+
+.page__title {
+  font-weight: 500;
+  font-size: 57px;
+  line-height: 132%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #624696;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /**
@@ -1322,6 +1384,40 @@ template {
   font-size: 16px;
   line-height: 112%;
   color: #616161;
+}
+
+.services-banner {
+  background-image: url("../images/services-banner.jpg");
+  background-size: cover;
+  padding-top: 226px;
+  padding-bottom: 98px;
+  text-align: center;
+}
+
+.services-banner__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #ffffff;
+  max-width: 607px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.services-banner__text {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 147%;
+  color: #ffffff;
+  max-width: 532px;
+  margin: 0 auto;
+}
+
+.btn-white {
+  margin-top: 25px;
 }
 
 .order-form {

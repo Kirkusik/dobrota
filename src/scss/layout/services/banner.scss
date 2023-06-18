@@ -1,0 +1,33 @@
+.services-banner {
+    background-image: url("../images/services-banner.jpg");
+    background-size: cover;
+    padding-top: 226px;
+    padding-bottom: 98px;
+    text-align: center;
+}
+
+.services-banner__title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #ffffff;
+    max-width: 607px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.services-banner__text {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 147%;
+    color: #ffffff;
+    max-width: 532px;
+    margin: 0 auto;
+}
+
+.btn-white {
+    margin-top: 25px;
+}
