@@ -17,12 +17,22 @@
 @import "config/base";
 
 // Подключение стилей отдельных блоков и секций =======================================================================================================================
+@import "../../node_modules/swiper/swiper.scss";
+
+@import "layout/header";
 
 // HOME PAGE
 @import "layout/home/intro.scss";
 @import "layout/home/services.scss";
 @import "layout/home/about.scss";
 @import "layout/home/programs.scss";
+@import "layout/home/diagnostics.scss";
+@import "layout/home/cosmetolog-procedures.scss";
+@import "layout/home/reviews.scss";
+@import "layout/home/order.scss";
+@import "layout/home/contacts.scss";
 
-@import "layout/header";
+// ORDER FORM
+@import "layout/order-form";
+
 @import "layout/footer";

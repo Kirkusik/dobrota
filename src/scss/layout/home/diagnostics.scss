@@ -1,0 +1,64 @@
+.home-diagnostics {
+	padding-top: 102px;
+	padding-bottom: 94px;
+
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.home-diagnostics__list {
+	padding-left: 0;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	list-style-type: none;
+	margin-top: 58px;
+	margin-bottom: 0;
+
+	display: grid;
+	grid-template-columns: repeat(2, 380px);
+	justify-content: space-between;
+	row-gap: 48px;
+
+	background-image: url(../images/diagnostics.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 380px 380px;
+}
+
+.home-diagnostics__item-title {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 125%;
+	text-transform: uppercase;
+
+	color: #624696;
+
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.home-diagnostics__item-text {
+	font-size: 15px;
+	line-height: 147%;
+
+	color: #616161;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.home-diagnostics__read-more {
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 120%;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+
+	color: #f1821a;
+}
+
+.home-diagnostics__all-services {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 78px;
+	width: max-content;
+}

@@ -1,0 +1,79 @@
+.home-cosmetolog-procedures {
+	padding-top: 130px;
+	padding-bottom: 80px;
+}
+
+.home-cosmetolog-procedures__container {
+	padding-left: 640px;
+	position: relative;
+}
+
+.home-cosmetolog-procedures__title {
+	text-align: left;
+	margin-bottom: 32px;
+}
+
+.home-cosmetolog-procedures__list {
+	padding-left: 0;
+	margin: 0;
+	list-style-type: none;
+
+	display: grid;
+	row-gap: 28px;
+}
+
+.home-cosmetolog-procedures__item {
+	display: grid;
+}
+
+.home-cosmetolog-procedures__link {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 156%;
+
+	color: #616161;
+
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 1px solid #dbe6ee;
+	border-radius: 10px;
+	padding: 24px 50px 24px 24px;
+
+	position: relative;
+
+	&::after {
+		content: "";
+		position: absolute;
+		right: 25px;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		background-color: #d8d8d8;
+		background-image: url(../images/svg/arrow-to-right.svg);
+		background-size: 7px 14px;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+}
+
+.home-cosmetolog-procedures__more {
+	display: block;
+	margin-top: 32px;
+
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 20px;
+
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+
+	color: #f1821a;
+	padding: 24px;
+}
+
+.home-cosmetolog-procedures__img {
+	position: absolute;
+	left: 0;
+	top: 0;
+}

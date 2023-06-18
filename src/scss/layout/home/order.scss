@@ -1,0 +1,38 @@
+.home-order {
+	padding-top: 70px;
+	padding-bottom: 160px;
+
+	background-color: #614098;
+}
+
+.home-order__container {
+	display: grid;
+	grid-template-columns: 480px 1fr;
+	column-gap: 80px;
+	align-items: center;
+}
+
+.home-order__title {
+	text-align: left;
+	margin-bottom: 16px;
+}
+
+.home-order__subtitle {
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 129%;
+	text-transform: uppercase;
+	color: #ffffff;
+
+	margin-top: 0;
+	margin-bottom: 70px;
+	max-width: 280px;
+}
+
+.home-order__text {
+	font-size: 16px;
+	line-height: 125%;
+
+	color: #ffffff;
+	margin: 0;
+}

@@ -1,0 +1,44 @@
+.home-reviews {
+	padding-top: 80px;
+	padding-bottom: 90px;
+	position: relative;
+}
+
+.home-reviews__wrapper {
+	max-width: 430px;
+
+	position: absolute;
+	right: 60%;
+	top: 200px;
+}
+
+.home-reviews__slider {
+	margin-left: auto;
+	margin-right: 0;
+	width: 58%;
+}
+
+.home-reviews__slider-wrapper {
+	padding-left: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+.home-reviews__item {
+	max-width: 360px;
+
+	background: rgba(255, 255, 255, 0.8);
+	border: 1px solid #dbe6ee;
+	border-radius: 10px;
+	padding: 30px;
+}
+
+.review__author {
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 21px;
+	color: #f1821a;
+
+	margin-top: 0;
+	margin-bottom: 16px;
+}

@@ -65,32 +65,45 @@
 	color: #ffffff;
 }
 
+.btn-violet {
+	@extend %btn;
+
+	background-color: #624696;
+	border: 1px dashed #624696;
+	color: #ffffff;
+}
+
 .btn-transparent {
 	@extend %btn;
 
 	&--orange {
-		border: 2px solid #624696;
-		color: #624696;
-	}
-	&--violet {
 		border: 2px solid #f1821a;
 		color: #f1821a;
+	}
+	&--violet {
+		border: 2px solid #624696;
+		color: #624696;
 	}
 }
 
 .section-title {
 	font-weight: 500;
-	font-size: 50px;
+	@include fz(50, 32);
 	line-height: 114%;
 
 	text-align: center;
 	text-transform: uppercase;
+
+	margin-top: 0;
 
 	&--orange {
 		color: #f1821a;
 	}
 	&--violet {
 		color: #624696;
+	}
+	&--white {
+		color: #fff;
 	}
 }
 
@@ -113,4 +126,69 @@
 	font-size: 15px;
 	line-height: 147%;
 	color: #624696;
+}
+
+.swiper-pagination {
+	display: grid;
+	justify-content: center;
+	grid-template-columns: repeat(auto-fit, 15px);
+	gap: 13px;
+
+	margin-top: 60px;
+
+	&--white {
+		& .swiper-pagination-bullet {
+			border: 1px solid #fff;
+		}
+		& .swiper-pagination-bullet-active {
+			background-color: #fff;
+		}
+	}
+	&--orange {
+		& .swiper-pagination-bullet {
+			border: 1px solid #f1821a;
+		}
+		& .swiper-pagination-bullet-active {
+			background-color: #f1821a;
+		}
+	}
+}
+
+.swiper-pagination-bullet {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+
+	cursor: pointer;
+}
+
+.contact-wrapper {
+	padding-left: 80px;
+	min-height: 60px;
+	display: grid;
+	align-items: center;
+
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: left center;
+
+	margin-top: 0;
+	margin-bottom: 30px;
+
+	font-weight: 500;
+	font-size: 21px;
+	line-height: 26px;
+
+	&--white {
+		color: #fff;
+	}
+	&--tel {
+		background-image: url(../images/svg/icon-phone.svg);
+	}
+	&--email {
+		background-image: url(../images/svg/icon-envelope.svg);
+	}
+	& a {
+		color: inherit;
+	}
 }

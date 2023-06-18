@@ -1,5 +1,14 @@
-import { isWebp } from "./modules";
+import Swiper, { Navigation, Pagination, Autoplay, Grid } from "swiper";
+import createHomeProgramsSlider from "./modules/home-programs-slider";
+import createHomeReviewsSlider from "./modules/home-reviews-slider";
+// import AOS from "aos";
 
-// Проверка браузера на поддерку .webp изображений ====================================================================================================================================================
-isWebp();
-// ====================================================================================================================================================
+// AOS.init({
+//     duration: 300,
+// });
+Swiper.use([Navigation, Pagination, Autoplay]);
+
+document.addEventListener("DOMContentLoaded", function (event) {
+	createHomeProgramsSlider(Swiper);
+	createHomeReviewsSlider(Swiper);
+});

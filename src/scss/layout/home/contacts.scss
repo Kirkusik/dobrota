@@ -1,0 +1,87 @@
+.home-contacts {
+	position: relative;
+}
+
+.home-contacts__container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.home-contacts__map {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 50%;
+	height: 100%;
+}
+
+.home-contacts__wrapper {
+	grid-column: 2 / 3;
+	padding-top: 140px;
+	padding-bottom: 40px;
+	padding-left: 60px;
+}
+
+.home-contacts__title {
+	text-align: left;
+	margin-bottom: 0;
+}
+
+.home-contacts__schedule-title {
+	font-size: 16px;
+	line-height: 156%;
+
+	color: #616161;
+
+	margin-top: 0;
+	margin-bottom: 42px;
+}
+
+.home-contacts__schedule {
+	padding-left: 80px;
+	background-image: url(../images/svg/clock.svg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 60px 60px;
+	min-height: 60px;
+
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 140%;
+	color: #616161;
+
+	margin-top: 0;
+	margin-bottom: 40px;
+}
+
+.home-contacts__adddress {
+	padding-left: 80px;
+	background-image: url(../images/svg/pin.svg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 60px 60px;
+	min-height: 60px;
+
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 135%;
+	color: #616161;
+
+	margin-top: 0;
+	margin-bottom: 55px;
+}
+
+.home-contaacts__info {
+	padding-left: 80px;
+	margin-top: 0;
+	margin-bottom: 0;
+
+	background-image: url(../images/svg/multi.svg);
+	background-repeat: no-repeat;
+	background-position: left 16px top;
+	background-size: 26px;
+
+	font-size: 16px;
+	line-height: 112%;
+	color: #616161;
+}
