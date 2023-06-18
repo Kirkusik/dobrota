@@ -257,3 +257,32 @@
 	margin-top: 0;
 	margin-bottom: 0;
 }
+
+.link-w-arrow {
+	color: #f1821a;
+	transition: color 0.5s;
+
+	&:hover {
+		color: #624696;
+	}
+
+	display: inline-flex;
+	align-items: center;
+
+	&::after {
+		content: "";
+		width: 18px;
+		height: 18px;
+		background-image: url(../images/svg/arrow-right-orange.svg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		margin-left: 10px;
+	}
+
+	&:hover {
+		&::after {
+			background-image: url(../images/svg/arrow-right-violet.svg);
+		}
+	}
+}
