@@ -1442,9 +1442,21 @@ template {
 .services-item {
   position: relative;
 }
-
-.services-wrapper {
+.services-item:nth-of-type(even) .services-item__wrapper {
+  margin-left: auto;
+  padding-left: 60px;
+}
+.services-item:nth-of-type(even) .services-item__image {
+  left: 0;
+}
+.services-item:nth-of-type(odd) .services-item__wrapper {
   padding-right: 60px;
+}
+.services-item:nth-of-type(odd) .services-item__image {
+  right: 0;
+}
+
+.services-item__wrapper {
   width: 50%;
   padding-top: 170px;
   padding-bottom: 171px;
@@ -1453,10 +1465,12 @@ template {
 .section-title {
   margin-bottom: 25px;
   text-transform: capitalize;
+  text-align: left;
 }
 
 .services-item__text {
   margin-bottom: 30px;
+  margin-top: 0;
   font-weight: 400;
   font-size: 17px;
   line-height: 147%;
@@ -1472,11 +1486,59 @@ template {
 
 .services-item__image {
   position: absolute;
-  right: 0;
   top: 0;
   width: 50%;
   height: 100%;
   object-fit: cover;
+}
+
+.service-proposals {
+  display: flex;
+  gap: 20px;
+  padding-left: 0;
+  margin-top: 30px;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.service-proposals__item {
+  max-width: 220px;
+  padding-left: 65px;
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  background-position: left top;
+}
+.service-proposals__item--medicine {
+  background-image: url(../images/svg/medicine-icon.svg);
+}
+.service-proposals__item--surgery {
+  background-image: url(../images/svg/surgery-icon.svg);
+}
+
+.service-proposals__title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 136%;
+  color: #624696;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.service-proposals__description {
+  font-size: 12px;
+  line-height: 150%;
+  color: #1b2948;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.services-item__bottom-text {
+  margin-top: 40px;
+  margin-bottom: 0;
+  font-size: 12px;
+  line-height: 150%;
+  color: #1b2948;
+  max-width: 500px;
 }
 
 .order-form {
