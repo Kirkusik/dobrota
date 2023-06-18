@@ -576,6 +576,29 @@ template {
   margin-bottom: 0;
 }
 
+.link-w-arrow {
+  color: #f1821a;
+  transition: color 0.5s;
+  display: inline-flex;
+  align-items: center;
+}
+.link-w-arrow:hover {
+  color: #624696;
+}
+.link-w-arrow::after {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-image: url(../images/svg/arrow-right-orange.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 10px;
+}
+.link-w-arrow:hover::after {
+  background-image: url(../images/svg/arrow-right-violet.svg);
+}
+
 /**
  * Swiper 8.4.7
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -888,11 +911,6 @@ template {
   line-height: 18px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  color: #f1821a;
-  transition: color 0.5s;
-}
-.service__details:hover {
-  color: #624696;
 }
 
 .home-about {
@@ -1505,7 +1523,7 @@ template {
   padding-top: 120px;
   padding-bottom: 150px;
   display: grid;
-  grid-template-columns: 2fr repeat(3, 1fr);
+  grid-template-columns: auto repeat(3, 1fr);
 }
 
 .page-footer__text {
@@ -1530,6 +1548,9 @@ template {
   display: flex;
 }
 
+.page-footer__block {
+  padding-right: 30px;
+}
 .page-footer__block:not(:first-child) {
   padding-top: 26px;
 }
