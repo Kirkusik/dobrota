@@ -20,6 +20,28 @@
     }
 }
 
+.services-item__reverse {
+    position: relative;
+    &:nth-of-type(even) {
+        & .services-item__wrapper {
+            padding-right: 60px;
+        }
+        & .services-item__image {
+            right: 0;
+        }
+    }
+
+    &:nth-of-type(odd) {
+        & .services-item__wrapper {
+            margin-left: auto;
+            padding-left: 60px;
+        }
+        & .services-item__image {
+            left: 0;
+        }
+    }
+}
+
 .services-item__wrapper {
     width: 50%;
     padding-top: 170px;
