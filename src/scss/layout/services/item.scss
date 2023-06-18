@@ -1,0 +1,39 @@
+.services-item {
+    position: relative;
+}
+
+.services-wrapper {
+    padding-right: 60px;
+    width: 50%;
+    padding-top: 170px;
+    padding-bottom: 171px;
+}
+
+.section-title {
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.services-item__text {
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 147%;
+    color: #303a4c;
+}
+
+.services-item__link {
+    margin-top: 40px;
+    font-size: 17px;
+    line-height: 21px;
+    letter-spacing: 0.5px;
+}
+
+.services-item__image {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}

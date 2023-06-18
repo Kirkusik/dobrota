@@ -403,13 +403,13 @@ template {
 
 .btn-orange {
   background-color: #f1821a;
-  border: 2px dashed #f1821a;
+  border: 1px dashed #f1821a;
   color: #ffffff;
 }
 
 .btn-violet {
   background-color: #624696;
-  border: 2px dashed #624696;
+  border: 1px dashed #624696;
   color: #ffffff;
 }
 
@@ -1419,6 +1419,46 @@ template {
 
 .btn-white {
   margin-top: 25px;
+}
+
+.services-item {
+  position: relative;
+}
+
+.services-wrapper {
+  padding-right: 60px;
+  width: 50%;
+  padding-top: 170px;
+  padding-bottom: 171px;
+}
+
+.section-title {
+  margin-bottom: 25px;
+  text-transform: capitalize;
+}
+
+.services-item__text {
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 147%;
+  color: #303a4c;
+}
+
+.services-item__link {
+  margin-top: 40px;
+  font-size: 17px;
+  line-height: 21px;
+  letter-spacing: 0.5px;
+}
+
+.services-item__image {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .order-form {
