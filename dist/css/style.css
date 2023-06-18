@@ -1541,6 +1541,53 @@ template {
   max-width: 500px;
 }
 
+.cta {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #e69d59;
+  position: relative;
+}
+
+.cta__container {
+  display: grid;
+  grid-template-columns: 480px 1fr;
+  column-gap: 122px;
+  row-gap: 12px;
+}
+
+.cta__title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 125%;
+  color: #ffffff;
+  margin-top: 0;
+}
+
+.cta__text {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 32px;
+  color: #f3f9fd;
+  margin-top: 0;
+}
+
+.cta__button {
+  max-width: 206px;
+}
+
+.cta__tel {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 114%;
+  color: #ffffff;
+  padding-left: 67px;
+  background-image: url(../images/svg/cta-phone.svg);
+  background-repeat: no-repeat;
+  background-size: 42px 42px;
+  background-position: left center;
+  align-self: center;
+}
+
 .order-form {
   max-width: 600px;
   background-color: #f3f9fd;
