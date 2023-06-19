@@ -1439,6 +1439,229 @@ template {
   margin-top: 25px;
 }
 
+.services-item {
+  position: relative;
+}
+.services-item:nth-of-type(even) .services-item__wrapper {
+  margin-left: auto;
+  padding-left: 60px;
+}
+.services-item:nth-of-type(even) .services-item__image {
+  left: 0;
+}
+.services-item:nth-of-type(odd) .services-item__wrapper {
+  padding-right: 60px;
+}
+.services-item:nth-of-type(odd) .services-item__image {
+  right: 0;
+}
+
+.services-item__reverse {
+  position: relative;
+}
+.services-item__reverse:nth-of-type(even) .services-item__wrapper {
+  padding-right: 60px;
+}
+.services-item__reverse:nth-of-type(even) .services-item__image {
+  right: 0;
+}
+.services-item__reverse:nth-of-type(odd) .services-item__wrapper {
+  margin-left: auto;
+  padding-left: 60px;
+}
+.services-item__reverse:nth-of-type(odd) .services-item__image {
+  left: 0;
+}
+
+.services-item__wrapper {
+  width: 50%;
+  padding-top: 170px;
+  padding-bottom: 171px;
+}
+
+.section-title {
+  margin-bottom: 25px;
+  text-transform: capitalize;
+  text-align: left;
+}
+
+.services-item__text {
+  margin-bottom: 30px;
+  margin-top: 0;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 147%;
+  color: #303a4c;
+}
+
+.services-item__link {
+  margin-top: 40px;
+  font-size: 17px;
+  line-height: 21px;
+  letter-spacing: 0.5px;
+}
+
+.services-item__image {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service-proposals {
+  display: flex;
+  gap: 20px;
+  padding-left: 0;
+  margin-top: 30px;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.service-proposals__item {
+  max-width: 220px;
+  padding-left: 65px;
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  background-position: left top;
+}
+.service-proposals__item--medicine {
+  background-image: url(../images/svg/medicine-icon.svg);
+}
+.service-proposals__item--surgery {
+  background-image: url(../images/svg/surgery-icon.svg);
+}
+
+.service-proposals__title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 136%;
+  color: #624696;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.service-proposals__description {
+  font-size: 12px;
+  line-height: 150%;
+  color: #1b2948;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.services-item__bottom-text {
+  margin-top: 40px;
+  margin-bottom: 0;
+  font-size: 12px;
+  line-height: 150%;
+  color: #1b2948;
+  max-width: 500px;
+}
+
+.cta {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #e69d59;
+  position: relative;
+}
+
+.cta__container {
+  display: grid;
+  grid-template-columns: 480px 1fr;
+  column-gap: 122px;
+  row-gap: 12px;
+}
+
+.cta__title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 125%;
+  color: #ffffff;
+  margin-top: 0;
+}
+
+.cta__text {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 32px;
+  color: #f3f9fd;
+  margin-top: 0;
+}
+
+.cta__button {
+  max-width: 206px;
+}
+
+.cta__tel {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 114%;
+  color: #ffffff;
+  padding-left: 67px;
+  background-image: url(../images/svg/cta-phone.svg);
+  background-repeat: no-repeat;
+  background-size: 42px 42px;
+  background-position: left center;
+  align-self: center;
+}
+
+.services-promo {
+  background-image: url(../images/services-promo.jpg);
+  background-size: cover;
+  background-position: right top;
+  padding-top: 92px;
+  padding-bottom: 132px;
+}
+
+.services-promo__title {
+  margin-bottom: 21px;
+  max-width: 689px;
+}
+
+.services-promo__accent {
+  color: #f1821a;
+  font-weight: 700;
+  text-transform: lowercase;
+}
+
+.services-promo__text {
+  font-size: 17px;
+  line-height: 147%;
+  color: #303a4c;
+  margin-top: 0;
+  margin-bottom: 33px;
+  max-width: 500px;
+}
+
+.services-promo__list {
+  list-style: none;
+  padding-left: 0;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
+  color: #624696;
+  margin-top: 0;
+  margin-bottom: 0;
+  gap: 27px;
+  display: flex;
+  flex-direction: column;
+}
+
+.services-promo__list-item {
+  padding-left: 40px;
+  background-repeat: no-repeat;
+  background-position: left top;
+  height: 27px;
+}
+.services-promo__list-item--modern {
+  background-image: url(../images/svg/modern.svg);
+  background-size: 29px 27px;
+}
+.services-promo__list-item--licensed {
+  background-image: url(../images/svg/licensed.svg);
+  background-size: 25px 27px;
+}
+
 .order-form {
   max-width: 600px;
   background-color: #f3f9fd;

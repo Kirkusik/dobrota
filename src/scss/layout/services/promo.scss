@@ -1,0 +1,56 @@
+.services-promo {
+    background-image: url(../images/services-promo.jpg);
+    background-size: cover;
+    background-position: right top;
+    padding-top: 92px;
+    padding-bottom: 132px;
+}
+
+.services-promo__title {
+    margin-bottom: 21px;
+    max-width: 689px;
+}
+
+.services-promo__accent {
+    color: #f1821a;
+    font-weight: 700;
+    text-transform: lowercase;
+}
+
+.services-promo__text {
+    font-size: 17px;
+    line-height: 147%;
+    color: #303a4c;
+    margin-top: 0;
+    margin-bottom: 33px;
+    max-width: 500px;
+}
+
+.services-promo__list {
+    list-style: none;
+    padding-left: 0;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    color: #624696;
+    margin-top: 0;
+    margin-bottom: 0;
+    gap: 27px;
+    display: flex;
+    flex-direction: column;
+}
+
+.services-promo__list-item {
+    padding-left: 40px;
+    background-repeat: no-repeat;
+    background-position: left top;
+    height: 27px;
+    &--modern {
+        background-image: url(../images/svg/modern.svg);
+        background-size: 29px 27px;
+    }
+    &--licensed {
+        background-image: url(../images/svg/licensed.svg);
+        background-size: 25px 27px;
+    }
+}
