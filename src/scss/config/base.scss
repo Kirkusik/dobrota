@@ -68,11 +68,16 @@
 	border-radius: 5px;
 
 	font-weight: 600;
-	font-size: 18px;
+	@include fz(18, 14);
 	line-height: 139%;
 	text-transform: uppercase;
 
 	display: inline-flex;
+
+	@include mq(768) {
+		padding: 10px 20px;
+		max-width: 100%;
+	}
 }
 
 .btn-orange {
@@ -271,7 +276,7 @@
 
 .page__title {
 	font-weight: 500;
-	font-size: 57px;
+	@include fz(57, 32);
 	line-height: 132%;
 	text-align: center;
 	text-transform: uppercase;
