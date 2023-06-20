@@ -1,61 +1,74 @@
 .services-promo {
-	background-image: url(../images/services-promo.jpg);
-	background-size: cover;
-	background-position: right top;
-	padding-top: 92px;
-	padding-bottom: 132px;
+    background-image: url(../images/services-promo.jpg);
+    background-size: cover;
+    background-position: right top;
+    padding-top: 92px;
+    padding-bottom: 132px;
+    position: relative;
+    @include mq(1200) {
+        padding-top: 55px;
+        padding-bottom: 70px;
+        background-image: linear-gradient(
+                rgba(255, 255, 255, 0.7),
+                rgba(255, 255, 255, 0.7)
+            ),
+            url(../images/services-promo.jpg);
+    }
 }
 
 .services-promo__title {
-	text-align: left;
-	margin-bottom: 21px;
-	max-width: 689px;
+    text-align: left;
+    margin-bottom: 21px;
+    max-width: 689px;
+    @include mq(1200) {
+        max-width: 489px;
+    }
 }
 
 .services-promo__accent {
-	color: #f1821a;
-	font-weight: 700;
-	text-transform: lowercase;
+    color: #f1821a;
+    font-weight: 700;
+    text-transform: lowercase;
 }
 
 .services-promo__text {
-	font-size: 17px;
-	line-height: 147%;
-	color: #303a4c;
-	margin-top: 0;
-	margin-bottom: 33px;
-	max-width: 500px;
+    @include fz(17, 14);
+    line-height: 147%;
+    color: #303a4c;
+    margin-top: 0;
+    margin-bottom: 33px;
+    max-width: 500px;
 }
 
 .services-promo__list {
-	list-style: none;
-	padding-left: 0;
-	margin-top: 0;
-	margin-bottom: 0;
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 
-	font-weight: 500;
-	font-size: 17px;
-	line-height: 21px;
-	color: #624696;
+    font-weight: 500;
+    @include fz(17, 14);
+    line-height: 21px;
+    color: #624696;
 }
 
 .services-promo__list-item {
-	padding-left: 40px;
-	padding-top: 4px;
-	background-repeat: no-repeat;
-	background-position: left center;
-	min-height: 27px;
+    padding-left: 40px;
+    padding-top: 4px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    min-height: 27px;
 
-	&:not(:last-child) {
-		margin-bottom: 27px;
-	}
+    &:not(:last-child) {
+        margin-bottom: 27px;
+    }
 
-	&--modern {
-		background-image: url(../images/svg/modern.svg);
-		background-size: 29px 27px;
-	}
-	&--licensed {
-		background-image: url(../images/svg/licensed.svg);
-		background-size: 25px 27px;
-	}
+    &--modern {
+        background-image: url(../images/svg/modern.svg);
+        background-size: 29px 27px;
+    }
+    &--licensed {
+        background-image: url(../images/svg/licensed.svg);
+        background-size: 25px 27px;
+    }
 }
