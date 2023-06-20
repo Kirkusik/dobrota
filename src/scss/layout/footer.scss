@@ -1,12 +1,40 @@
 .page-footer {
 	background-color: #c0602a;
 }
+
+.page-footer__logo-img {
+	object-fit: contain;
+
+	@include mq(992) {
+		width: 160px;
+		height: auto;
+	}
+}
+
 .page-footer__top {
 	padding-top: 120px;
 	padding-bottom: 150px;
 
 	display: grid;
 	grid-template-columns: auto repeat(3, 1fr);
+
+	@include mq(1200) {
+		padding-top: 80px;
+		padding-bottom: 120px;
+	}
+	@include mq(992) {
+		grid-template-columns: auto max-content;
+		row-gap: 40px;
+
+		padding-top: 60px;
+		padding-bottom: 80px;
+	}
+	@include mq(576) {
+		grid-template-columns: 1fr;
+
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
 }
 
 .page-footer__text {
@@ -17,6 +45,10 @@
 
 	margin-top: 20px;
 	margin-bottom: 40px;
+
+	@include mq(576) {
+		max-width: 100%;
+	}
 }
 
 .footer-socials {
@@ -78,4 +110,9 @@
 	line-height: 125%;
 
 	color: #ffffff;
+
+	@include mq(768) {
+		padding-top: 16px;
+		padding-bottom: 16px;
+	}
 }

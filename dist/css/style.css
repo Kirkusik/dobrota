@@ -376,6 +376,20 @@ template {
   color: #000;
   background-color: #fff5eb;
 }
+.page__body--no-scroll {
+  overflow: hidden;
+  position: relative;
+}
+.page__body--no-scroll::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  z-index: 0;
+}
 
 .v-hidden {
   position: absolute;
@@ -776,6 +790,15 @@ template {
   border: 1px solid #eec296;
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: #fff5eb;
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 992px) {
+  .page-header {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
 }
 
 .page-header__container {
@@ -784,12 +807,74 @@ template {
   align-items: center;
 }
 
+.page-header__logo-img {
+  object-fit: contain;
+}
+@media (max-width: 992px) {
+  .page-header__logo-img {
+    width: 160px;
+    height: auto;
+  }
+}
+@media (max-width: 576px) {
+  .page-header__logo-img {
+    width: 120px;
+  }
+}
+
+.menu-toggle {
+  display: none;
+}
+@media (max-width: 992px) {
+  .menu-toggle {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    order: 1;
+    padding: 6px;
+  }
+}
+
+@media (max-width: 992px) {
+  .page-header__nav {
+    display: none;
+  }
+  .page-header__nav--active {
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 94px;
+    width: 100%;
+    padding: 30px 20px;
+    background-color: #fff5eb;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  }
+}
+@media (max-width: 992px) and (max-width: 576px) {
+  .page-header__nav--active {
+    top: 79px;
+  }
+}
+
 .header-menu {
   padding-left: 0;
   margin: 0;
   list-style-type: none;
   display: flex;
   column-gap: 20px;
+}
+@media (max-width: 1200px) {
+  .header-menu {
+    column-gap: 0;
+  }
+}
+@media (max-width: 992px) {
+  .header-menu {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .header-menu__link {
@@ -802,22 +887,46 @@ template {
   color: #624696;
   transition: color 0.5s;
 }
-.header-menu__link--active, .header-menu__link:hover {
+.header-menu__link--active, .header-menu__link:hover, .header-menu__link:focus {
   color: #f1821a;
 }
 
-.pagee-header__tel {
+.page-header__tel {
   font-weight: 600;
-  font-size: 23px;
+  font-size: calc(14px + (23 - 14) * (100vw - 320px) / (1920 - 320));
   line-height: 1;
   color: #624696;
   border: 2px solid #624696;
   border-radius: 10px;
   padding: 14px 16px;
-  transition: opacity 0.5s;
+  transition: color 0.5s, border-color 0.5s;
 }
-.pagee-header__tel:hover {
-  opacity: 0.6;
+.page-header__tel:hover, .page-header__tel:focus {
+  color: #f1821a;
+  border-color: #f1821a;
+}
+@media (max-width: 992px) {
+  .page-header__tel {
+    margin-left: auto;
+    margin-right: 32px;
+    padding: 10px 14px;
+  }
+}
+@media (max-width: 576px) {
+  .page-header__tel {
+    padding: 0;
+    border: none;
+    width: 28px;
+    height: 28px;
+    background-image: url(../images/svg/cta-phone.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 20px;
+  }
+  .page-header__tel span {
+    display: none;
+  }
 }
 
 .home-intro {
@@ -1657,7 +1766,7 @@ template {
   color: #eec296;
   font-weight: 700;
   font-size: 200px;
-  line-height: 160%;
+  line-height: 100%;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -1711,11 +1820,42 @@ template {
   background-color: #c0602a;
 }
 
+.page-footer__logo-img {
+  object-fit: contain;
+}
+@media (max-width: 992px) {
+  .page-footer__logo-img {
+    width: 160px;
+    height: auto;
+  }
+}
+
 .page-footer__top {
   padding-top: 120px;
   padding-bottom: 150px;
   display: grid;
   grid-template-columns: auto repeat(3, 1fr);
+}
+@media (max-width: 1200px) {
+  .page-footer__top {
+    padding-top: 80px;
+    padding-bottom: 120px;
+  }
+}
+@media (max-width: 992px) {
+  .page-footer__top {
+    grid-template-columns: auto max-content;
+    row-gap: 40px;
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+}
+@media (max-width: 576px) {
+  .page-footer__top {
+    grid-template-columns: 1fr;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 .page-footer__text {
@@ -1725,6 +1865,11 @@ template {
   color: #edf0ff;
   margin-top: 20px;
   margin-bottom: 40px;
+}
+@media (max-width: 576px) {
+  .page-footer__text {
+    max-width: 100%;
+  }
 }
 
 .footer-socials {
@@ -1781,4 +1926,10 @@ template {
   font-size: 12px;
   line-height: 125%;
   color: #ffffff;
+}
+@media (max-width: 768px) {
+  .copyright {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }

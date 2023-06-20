@@ -2,12 +2,68 @@
 	border: 1px solid #eec296;
 	padding-top: 30px;
 	padding-bottom: 30px;
+	background-color: #fff5eb;
+
+	position: relative;
+	z-index: 1;
+
+	@include mq(992) {
+		padding-top: 14px;
+		padding-bottom: 14px;
+	}
 }
 
 .page-header__container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+
+.page-header__logo-img {
+	object-fit: contain;
+
+	@include mq(992) {
+		width: 160px;
+		height: auto;
+	}
+	@include mq(576) {
+		width: 120px;
+	}
+}
+
+.menu-toggle {
+	display: none;
+
+	@include mq(992) {
+		padding: 0;
+		border: none;
+		background-color: transparent;
+		cursor: pointer;
+		display: flex;
+		order: 1;
+		padding: 6px;
+	}
+}
+
+.page-header__nav {
+	@include mq(992) {
+		display: none;
+
+		&--active {
+			display: block;
+			position: fixed;
+			right: 0;
+			top: 94px;
+			width: 100%;
+			padding: 30px 20px;
+			background-color: #fff5eb;
+			box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+
+			@include mq(576) {
+				top: 79px;
+			}
+		}
+	}
 }
 
 .header-menu {
@@ -17,6 +73,14 @@
 
 	display: flex;
 	column-gap: 20px;
+
+	@include mq(1200) {
+		column-gap: 0;
+	}
+	@include mq(992) {
+		flex-direction: column;
+		align-items: center;
+	}
 }
 
 .header-menu__link {
@@ -32,14 +96,15 @@
 	transition: color 0.5s;
 
 	&--active,
-	&:hover {
+	&:hover,
+	&:focus {
 		color: #f1821a;
 	}
 }
 
-.pagee-header__tel {
+.page-header__tel {
 	font-weight: 600;
-	font-size: 23px;
+	@include fz(23, 14);
 	line-height: 1;
 	color: #624696;
 
@@ -47,9 +112,32 @@
 	border-radius: 10px;
 	padding: 14px 16px;
 
-	transition: opacity 0.5s;
+	transition: color 0.5s, border-color 0.5s;
 
-	&:hover {
-		opacity: 0.6;
+	&:hover,
+	&:focus {
+		color: #f1821a;
+		border-color: #f1821a;
+	}
+
+	@include mq(992) {
+		margin-left: auto;
+		margin-right: 32px;
+		padding: 10px 14px;
+	}
+	@include mq(576) {
+		padding: 0;
+		border: none;
+		width: 28px;
+		height: 28px;
+		background-image: url(../images/svg/cta-phone.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		margin-right: 20px;
+
+		& span {
+			display: none;
+		}
 	}
 }
