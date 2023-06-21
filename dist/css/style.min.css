@@ -543,6 +543,24 @@ template {
   padding-top: 60px;
   padding-bottom: 116px;
 }
+@media (max-width: 1200px) {
+  .intro {
+    padding-top: 55px;
+    padding-bottom: 90px;
+  }
+}
+@media (max-width: 992px) {
+  .intro {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+}
+@media (max-width: 768px) {
+  .intro {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+}
 
 .breadcrumbs {
   padding-left: 0;
@@ -1537,6 +1555,7 @@ template {
   .services-banner {
     padding-top: 95px;
     padding-bottom: 50px;
+    background-position: bottom center;
   }
 }
 
