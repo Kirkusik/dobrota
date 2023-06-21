@@ -3,6 +3,14 @@
     padding-bottom: 80px;
     background-color: #e69d59;
     position: relative;
+    @include mq(1200) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    @include mq(992) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 }
 
 .cta__container {
@@ -10,11 +18,20 @@
     grid-template-columns: 480px 1fr;
     column-gap: 122px;
     row-gap: 12px;
+    @include mq(1200) {
+        grid-template-columns: 410px 1fr;
+        column-gap: 100px;
+        row-gap: 8px;
+    }
+    @include mq(992) {
+        grid-template-columns: 250px 1fr;
+        column-gap: 80px;
+    }
 }
 
 .cta__title {
     font-weight: 500;
-    font-size: 32px;
+    @include fz(32, 18);
     line-height: 125%;
     color: #ffffff;
     margin-top: 0;
@@ -22,7 +39,7 @@
 
 .cta__text {
     font-weight: 500;
-    font-size: 26px;
+    @include fz(26, 14);
     line-height: 32px;
     color: #f3f9fd;
     margin-top: 0;
@@ -30,11 +47,14 @@
 
 .cta__button {
     max-width: 206px;
+    @include mq(1200) {
+        min-width: 182px;
+    }
 }
 
 .cta__tel {
     font-weight: 600;
-    font-size: 50px;
+    @include fz(50, 32);
     line-height: 114%;
     color: #ffffff;
     padding-left: 67px;
