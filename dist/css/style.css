@@ -1621,6 +1621,11 @@ template {
 .services-item:nth-of-type(odd) .services-item__image {
   right: 0;
 }
+@media (max-width: 768px) {
+  .services-item {
+    display: grid;
+  }
+}
 
 .services-item__wrapper {
   width: 50%;
@@ -1637,6 +1642,11 @@ template {
   .services-item__wrapper {
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .services-item__wrapper {
+    width: 100%;
   }
 }
 
@@ -1673,6 +1683,12 @@ template {
   width: 50%;
   height: 100%;
   object-fit: cover;
+}
+@media (max-width: 768px) {
+  .services-item__image {
+    width: 100%;
+    position: static;
+  }
 }
 
 .service-proposals {
@@ -1773,6 +1789,11 @@ template {
     column-gap: 80px;
   }
 }
+@media (max-width: 768px) {
+  .cta__container {
+    grid-template-columns: 1fr;
+  }
+}
 
 .cta__title {
   font-weight: 500;
@@ -1780,6 +1801,12 @@ template {
   line-height: 125%;
   color: #ffffff;
   margin-top: 0;
+}
+@media (max-width: 768px) {
+  .cta__title {
+    order: 1;
+    margin-bottom: 5px;
+  }
 }
 
 .cta__text {
@@ -1789,6 +1816,11 @@ template {
   color: #f3f9fd;
   margin-top: 0;
 }
+@media (max-width: 768px) {
+  .cta__text {
+    order: 3;
+  }
+}
 
 .cta__button {
   max-width: 206px;
@@ -1796,6 +1828,12 @@ template {
 @media (max-width: 1200px) {
   .cta__button {
     min-width: 182px;
+  }
+}
+@media (max-width: 768px) {
+  .cta__button {
+    order: 2;
+    margin-bottom: 20px;
   }
 }
 
@@ -1810,6 +1848,11 @@ template {
   background-size: 42px 42px;
   background-position: left center;
   align-self: center;
+}
+@media (max-width: 768px) {
+  .cta__tel {
+    order: 4;
+  }
 }
 
 .services-promo {
