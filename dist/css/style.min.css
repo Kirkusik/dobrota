@@ -2005,11 +2005,27 @@ template {
   padding-bottom: 219px;
   text-align: center;
 }
+@media (max-width: 1200px) {
+  .error {
+    padding-top: 10px;
+    padding-bottom: 180px;
+  }
+}
+@media (max-width: 992px) {
+  .error {
+    padding-bottom: 150px;
+  }
+}
+@media (max-width: 576px) {
+  .error {
+    padding-bottom: 130px;
+  }
+}
 
 .error__title {
   color: #eec296;
   font-weight: 700;
-  font-size: 200px;
+  font-size: calc(50px + (200 - 50) * (100vw - 320px) / (1920 - 320));
   line-height: 160%;
   margin-top: 0;
   margin-bottom: 0;
@@ -2017,11 +2033,30 @@ template {
 
 .error__text {
   font-weight: 600;
-  font-size: 20px;
+  font-size: calc(14px + (20 - 14) * (100vw - 320px) / (1920 - 320));
   line-height: 125%;
   color: #624696;
   margin-top: 0;
   margin-bottom: 91px;
+}
+@media (max-width: 1200px) {
+  .error__text {
+    margin-bottom: 75px;
+  }
+}
+@media (max-width: 992px) {
+  .error__text {
+    margin-bottom: 55px;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .error__text {
+    margin-bottom: 30px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .order-form {

@@ -2,12 +2,22 @@
     padding-top: 15px;
     padding-bottom: 219px;
     text-align: center;
+    @include mq(1200) {
+        padding-top: 10px;
+        padding-bottom: 180px;
+    }
+    @include mq(992) {
+        padding-bottom: 150px;
+    }
+    @include mq(576) {
+        padding-bottom: 130px;
+    }
 }
 
 .error__title {
     color: #eec296;
     font-weight: 700;
-    font-size: 200px;
+    @include fz(200, 50);
     line-height: 160%;
     margin-top: 0;
     margin-bottom: 0;
@@ -15,9 +25,22 @@
 
 .error__text {
     font-weight: 600;
-    font-size: 20px;
+    @include fz(20, 14);
     line-height: 125%;
     color: #624696;
     margin-top: 0;
     margin-bottom: 91px;
+    @include mq(1200) {
+        margin-bottom: 75px;
+    }
+    @include mq(992) {
+        margin-bottom: 55px;
+        margin-top: 20px;
+    }
+    @include mq(576) {
+        margin-bottom: 30px;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
