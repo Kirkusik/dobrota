@@ -20,15 +20,19 @@
     row-gap: 12px;
     @include mq(1200) {
         grid-template-columns: 410px 1fr;
-        column-gap: 100px;
+        column-gap: 50px;
+        padding-left: 70px;
         row-gap: 8px;
     }
     @include mq(992) {
         grid-template-columns: 250px 1fr;
-        column-gap: 80px;
     }
     @include mq(768) {
         grid-template-columns: 1fr;
+    }
+    @include mq(576) {
+        padding-left: 40px;
+        padding-right: 40px;
     }
 }
 
@@ -68,7 +72,7 @@
 
 .cta__tel {
     font-weight: 600;
-    @include fz(50, 32);
+    @include fz(50, 24);
     line-height: 114%;
     color: #ffffff;
     padding-left: 67px;
@@ -79,5 +83,9 @@
     align-self: center;
     @include mq(768) {
         order: 4;
+        background-size: contain;
+    }
+    @include mq(576) {
+        padding-left: 40px;
     }
 }

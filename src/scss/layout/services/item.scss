@@ -32,7 +32,10 @@
         }
     }
     @include mq(768) {
-        display: grid;
+        padding-top: 500px;
+    }
+    @include mq(576) {
+        padding-top: 300px;
     }
 }
 
@@ -51,12 +54,21 @@
     @include mq(768) {
         width: 100%;
     }
+    @include mq(576) {
+        padding-top: 35px;
+        padding-bottom: 35px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
 }
 
 .services-item__title {
     margin-bottom: 25px;
     text-transform: capitalize;
     text-align: left;
+    @include mq(576) {
+        margin-bottom: 15px;
+    }
 }
 
 .services-item__text {
@@ -66,6 +78,9 @@
     @include fz(17, 14);
     line-height: 147%;
     color: #303a4c;
+    @include mq(576) {
+        margin-bottom: 20px;
+    }
 }
 
 .services-item__link {
@@ -75,6 +90,9 @@
     letter-spacing: 0.5px;
     @include mq(1200) {
         margin-top: 25px;
+    }
+    @include mq(576) {
+        margin-top: 15px;
     }
 }
 
@@ -86,17 +104,24 @@
     object-fit: cover;
     @include mq(768) {
         width: 100%;
-        position: static;
+        height: 500px;
+    }
+    @include mq(576) {
+        height: 300px;
     }
 }
 
 .service-proposals {
-    display: flex;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
     padding-left: 0;
     margin-top: 30px;
     margin-bottom: 0;
     list-style: none;
+    @include mq(1200) {
+        grid-template-columns: 1fr;
+    }
 }
 
 .service-proposals__item {
