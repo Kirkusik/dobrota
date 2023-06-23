@@ -60,14 +60,7 @@
 }
 
 .cta__button {
-    max-width: 206px;
-    @include mq(1200) {
-        min-width: 182px;
-    }
-    @include mq(768) {
-        order: 2;
-        margin-bottom: 20px;
-    }
+    max-width: max-content;
 }
 
 .cta__tel {
