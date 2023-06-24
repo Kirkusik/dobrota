@@ -1,15 +1,34 @@
 .faq-consultation {
     position: relative;
     background-color: #f2f2f2;
+    padding-top: 276px;
+    padding-bottom: 112px;
 }
 
-.consultation-container {
+.consultation-wrapper {
     max-width: 500px;
+    width: 50%;
 }
 
 .faq-consultation__title {
     margin-top: 0;
     margin-bottom: 0;
+    color: #000000;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 114%;
+}
+
+.faq-consultation__accent {
+    color: #e17510;
+}
+
+.faq-consultation__text {
+    margin-top: 12px;
+    margin-bottom: 34px;
+    font-size: 17px;
+    line-height: 147%;
+    color: #303a4c;
 }
 
 .faq-consultation__link {
@@ -23,4 +42,13 @@
     @include mq(576) {
         margin-top: 15px;
     }
+}
+
+.faq-consultation__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
 }

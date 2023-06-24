@@ -2008,7 +2008,8 @@ template {
 .faq-item__title::after {
   content: "";
   display: block;
-  background-image: url(../images/svg/arrow-to-down.svg);
+  background-color: #c3c3c3;
+  border-radius: 50%;
   width: 30px;
   height: 30px;
   position: absolute;
@@ -2024,7 +2025,7 @@ template {
   border: 7px solid transparent;
   border-top-color: #ffffff;
   position: absolute;
-  top: 33px;
+  top: 35px;
   right: 39px;
   z-index: 1;
 }
@@ -2046,7 +2047,11 @@ template {
 }
 
 .faq__item[open] > .faq-item__title::after {
-  background-image: url(../images/svg/up-arrow.svg);
+  border: 1px solid #f1821a;
+  border-radius: 50%;
+  background-color: #ffffff;
+  width: 30px;
+  height: 30px;
 }
 
 .faq__item[open] > .faq-item__title::before {
@@ -2073,15 +2078,34 @@ template {
 .faq-consultation {
   position: relative;
   background-color: #f2f2f2;
+  padding-top: 276px;
+  padding-bottom: 112px;
 }
 
-.consultation-container {
+.consultation-wrapper {
   max-width: 500px;
+  width: 50%;
 }
 
 .faq-consultation__title {
   margin-top: 0;
   margin-bottom: 0;
+  color: #000000;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 114%;
+}
+
+.faq-consultation__accent {
+  color: #e17510;
+}
+
+.faq-consultation__text {
+  margin-top: 12px;
+  margin-bottom: 34px;
+  font-size: 17px;
+  line-height: 147%;
+  color: #303a4c;
 }
 
 .faq-consultation__link {
@@ -2099,6 +2123,15 @@ template {
   .faq-consultation__link {
     margin-top: 15px;
   }
+}
+
+.faq-consultation__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .error {
