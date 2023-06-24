@@ -14,6 +14,11 @@
             ),
             url(../images/services-promo.jpg);
     }
+    @include mq(576) {
+        padding-top: 40px;
+        padding-bottom: 50px;
+        padding-left: 20px;
+    }
 }
 
 .services-promo__title {
@@ -22,6 +27,9 @@
     max-width: 689px;
     @include mq(1200) {
         max-width: 489px;
+    }
+    @include mq(576) {
+        margin-bottom: 15px;
     }
 }
 
@@ -38,6 +46,9 @@
     margin-top: 0;
     margin-bottom: 33px;
     max-width: 500px;
+    @include mq(576) {
+        margin-bottom: 20px;
+    }
 }
 
 .services-promo__list {
@@ -61,6 +72,9 @@
 
     &:not(:last-child) {
         margin-bottom: 27px;
+        @include mq(576) {
+            margin-bottom: 15px;
+        }
     }
 
     &--modern {

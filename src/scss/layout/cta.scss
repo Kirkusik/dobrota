@@ -20,12 +20,19 @@
     row-gap: 12px;
     @include mq(1200) {
         grid-template-columns: 410px 1fr;
-        column-gap: 100px;
+        column-gap: 50px;
+        padding-left: 70px;
         row-gap: 8px;
     }
     @include mq(992) {
         grid-template-columns: 250px 1fr;
-        column-gap: 80px;
+    }
+    @include mq(768) {
+        grid-template-columns: 1fr;
+    }
+    @include mq(576) {
+        padding-left: 40px;
+        padding-right: 40px;
     }
 }
 
@@ -35,6 +42,10 @@
     line-height: 125%;
     color: #ffffff;
     margin-top: 0;
+    @include mq(768) {
+        order: 1;
+        margin-bottom: 5px;
+    }
 }
 
 .cta__text {
@@ -43,18 +54,18 @@
     line-height: 32px;
     color: #f3f9fd;
     margin-top: 0;
+    @include mq(768) {
+        order: 3;
+    }
 }
 
 .cta__button {
-    max-width: 206px;
-    @include mq(1200) {
-        min-width: 182px;
-    }
+    max-width: max-content;
 }
 
 .cta__tel {
     font-weight: 600;
-    @include fz(50, 32);
+    @include fz(50, 24);
     line-height: 114%;
     color: #ffffff;
     padding-left: 67px;
@@ -63,4 +74,11 @@
     background-size: 42px 42px;
     background-position: left center;
     align-self: center;
+    @include mq(768) {
+        order: 4;
+        background-size: contain;
+    }
+    @include mq(576) {
+        padding-left: 40px;
+    }
 }

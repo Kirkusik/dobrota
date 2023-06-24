@@ -227,6 +227,18 @@
 .intro {
 	padding-top: 60px;
 	padding-bottom: 116px;
+	@include mq(1200) {
+		padding-top: 55px;
+		padding-bottom: 90px;
+	}
+	@include mq(992) {
+		padding-top: 50px;
+		padding-bottom: 70px;
+	}
+	@include mq(768) {
+		padding-top: 40px;
+		padding-bottom: 60px;
+	}
 }
 
 .breadcrumbs {
