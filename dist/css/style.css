@@ -490,7 +490,7 @@ template {
   justify-content: center;
   grid-template-columns: repeat(auto-fit, 15px);
   gap: 13px;
-  margin-top: 60px;
+  margin-top: 40px;
 }
 .swiper-pagination--white .swiper-pagination-bullet {
   border: 1px solid #fff;
@@ -791,6 +791,20 @@ template {
   scroll-snap-stop: always;
 }
 
+.swiper-fade.swiper-free-mode .swiper-slide {
+  transition-timing-function: ease-out;
+}
+.swiper-fade .swiper-slide {
+  pointer-events: none;
+  transition-property: opacity;
+}
+.swiper-fade .swiper-slide .swiper-slide {
+  pointer-events: none;
+}
+.swiper-fade .swiper-slide-active, .swiper-fade .swiper-slide-active .swiper-slide-active {
+  pointer-events: auto;
+}
+
 .page-header {
   border: 1px solid #eec296;
   padding-top: 30px;
@@ -972,6 +986,90 @@ template {
   width: 350px;
   display: block;
   margin-bottom: 25px;
+}
+
+.home-intro__slider {
+  align-self: start;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.home-intro__slider-stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  bottom: 60px;
+  z-index: 2;
+  width: 192px;
+  min-height: 192px;
+  border-radius: 50%;
+  background-color: #f1821a;
+  padding: 20px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 147%;
+  text-align: center;
+  color: #ffffff;
+}
+.home-intro__slider-stats span {
+  font-weight: 600;
+  font-size: calc(32px + (50 - 32) * (100vw - 320px) / (1920 - 320));
+  line-height: 114%;
+}
+
+.home-intro__slider-wrapper {
+  padding-left: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.home-intro__slider-item {
+  position: relative;
+  padding-top: 80px;
+  padding-right: 192px;
+}
+
+.home-intro__slider-img {
+  object-fit: cover;
+  border-radius: 20px;
+}
+.home-intro__slider-img:nth-child(1) {
+  position: relative;
+  z-index: 1;
+}
+.home-intro__slider-img:nth-child(2) {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.home-intro_stats {
+  padding-left: 0;
+  margin-top: 30px;
+  margin-bottom: 0;
+  list-style-type: none;
+  display: flex;
+  column-gap: 22px;
+}
+
+.home-intro__stats-item {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 147%;
+  color: #616161;
+}
+.home-intro__stats-item span {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 114%;
+  color: #f1821a;
 }
 
 .home-services {
