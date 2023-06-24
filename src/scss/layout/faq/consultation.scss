@@ -1,0 +1,26 @@
+.faq-consultation {
+    position: relative;
+    background-color: #f2f2f2;
+}
+
+.consultation-container {
+    max-width: 500px;
+}
+
+.faq-consultation__title {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.faq-consultation__link {
+    margin-top: 40px;
+    @include fz(17, 14);
+    line-height: 21px;
+    letter-spacing: 0.5px;
+    @include mq(1200) {
+        margin-top: 25px;
+    }
+    @include mq(576) {
+        margin-top: 15px;
+    }
+}
