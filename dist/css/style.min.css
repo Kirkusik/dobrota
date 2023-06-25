@@ -408,11 +408,12 @@ template {
   padding: 14px 40px;
   border-radius: 5px;
   font-weight: 600;
-  font-size: 18px;
+  font-size: calc(14px + (18 - 14) * (100vw - 320px) / (1920 - 320));
   line-height: 139%;
   text-transform: uppercase;
   display: inline-flex;
   justify-content: center;
+  cursor: pointer;
 }
 @media (max-width: 1200px) {
   .btn-white, .btn-transparent, .btn-violet, .btn-orange {
@@ -449,7 +450,7 @@ template {
 
 .section-title {
   font-weight: 500;
-  font-size: calc(32px + (50 - 32) * (100vw - 320px) / (1920 - 320));
+  font-size: calc(28px + (50 - 28) * (100vw - 320px) / (1920 - 320));
   line-height: 114%;
   text-align: center;
   text-transform: uppercase;
@@ -604,7 +605,7 @@ template {
 
 .page__title {
   font-weight: 500;
-  font-size: calc(36px + (57 - 36) * (100vw - 320px) / (1920 - 320));
+  font-size: calc(32px + (57 - 32) * (100vw - 320px) / (1920 - 320));
   line-height: 132%;
   text-align: center;
   text-transform: uppercase;
