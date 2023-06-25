@@ -1,133 +1,134 @@
 .faq {
-	background-color: #f2f2f2;
-	padding-top: 140px;
-	padding-bottom: 140px;
+    background-color: #f2f2f2;
+    padding-top: 140px;
+    padding-bottom: 140px;
 
-	@include mq(1200) {
-		padding-top: 100px;
-		padding-bottom: 100px;
-	}
-	@include mq(992) {
-		padding-top: 80px;
-		padding-bottom: 80px;
-	}
-	@include mq(768) {
-		padding-top: 60px;
-		padding-bottom: 60px;
-	}
-	@include mq(576) {
-		padding-top: 40px;
-		padding-bottom: 40px;
-	}
+    @include mq(1200) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    @include mq(992) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    @include mq(768) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    @include mq(576) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 }
 
 .faq__item {
-	list-style: none;
-	background-color: rgba(255, 255, 255, 0.8);
-	border: 1px solid #dbe6ee;
-	border-radius: 10px;
+    list-style: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #dbe6ee;
+    border-radius: 10px;
 
-	&:not(:last-child) {
-		margin-bottom: 40px;
+    &:not(:last-child) {
+        margin-bottom: 40px;
 
-		@include mq(1200) {
-			margin-bottom: 30px;
-		}
-		@include mq(768) {
-			margin-bottom: 20px;
-		}
-	}
+        @include mq(1200) {
+            margin-bottom: 30px;
+        }
+        @include mq(768) {
+            margin-bottom: 20px;
+        }
+    }
 }
 
 .faq-item__title {
-	display: block;
-	font-weight: 600;
-	@include fz(21, 14);
-	line-height: 133%;
-	color: #624696;
-	cursor: pointer;
+    display: block;
+    font-weight: 600;
+    @include fz(21, 14);
+    line-height: 133%;
+    color: #624696;
+    cursor: pointer;
 
-	padding-top: 24px;
-	padding-bottom: 23px;
-	padding-left: 25px;
-	position: relative;
+    padding-top: 24px;
+    padding-bottom: 23px;
+    padding-left: 25px;
+    padding-right: 70px;
+    position: relative;
 
-	@include mq(576) {
-		padding-top: 18px;
-		padding-bottom: 18px;
-		padding-left: 18px;
-		padding-right: 42px;
-	}
+    @include mq(576) {
+        padding-top: 18px;
+        padding-bottom: 18px;
+        padding-left: 18px;
+        padding-right: 42px;
+    }
 }
 
 .faq-item__title::after {
-	content: "";
-	display: block;
-	background-color: #c3c3c3;
-	border-radius: 50%;
-	width: 30px;
-	height: 30px;
-	position: absolute;
-	right: 31px;
-	top: 22px;
+    content: "";
+    display: block;
+    background-color: #c3c3c3;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 31px;
+    top: 22px;
 
-	@include mq(576) {
-		top: 14px;
-		right: 12px;
-	}
+    @include mq(576) {
+        top: 14px;
+        right: 12px;
+    }
 }
 
 .faq-item__title::before {
-	content: "";
-	display: block;
-	width: 0;
-	height: 0;
-	border: 7px solid transparent;
-	border-top-color: #ffffff;
-	position: absolute;
-	top: 35px;
-	right: 39px;
-	z-index: 1;
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-top-color: #ffffff;
+    position: absolute;
+    top: 35px;
+    right: 39px;
+    z-index: 1;
 
-	@include mq(576) {
-		top: 27px;
-		right: 20px;
-	}
+    @include mq(576) {
+        top: 27px;
+        right: 20px;
+    }
 }
 
 .faq__item[open] {
-	border: 1px solid #e17510;
+    border: 1px solid #e17510;
 }
 
 .faq__item[open] > .faq-item__title::after {
-	border: 1px solid #f1821a;
-	border-radius: 50%;
-	background-color: #ffffff;
-	width: 30px;
-	height: 30px;
+    border: 1px solid #f1821a;
+    border-radius: 50%;
+    background-color: #ffffff;
+    width: 30px;
+    height: 30px;
 }
 
 .faq__item[open] > .faq-item__title::before {
-	border-bottom-color: #f1821a;
-	top: 26px;
+    border-bottom-color: #f1821a;
+    top: 26px;
 
-	@include mq(576) {
-		top: 18px;
-	}
+    @include mq(576) {
+        top: 18px;
+    }
 }
 
 .faq__item[open] .faq-item__title {
-	color: #979797;
-	padding-bottom: 0;
+    color: #979797;
+    padding-bottom: 0;
 }
 
 .faq-item__title::-webkit-details-marker {
-	display: none;
+    display: none;
 }
 
 .faq-item__description {
-	font-size: 15px;
-	line-height: 147%;
-	color: #1b2948;
-	padding: 15px 25px 26px 25px;
+    font-size: 15px;
+    line-height: 147%;
+    color: #1b2948;
+    padding: 15px 25px 26px 25px;
 }

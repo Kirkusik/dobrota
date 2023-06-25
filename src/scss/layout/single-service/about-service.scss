@@ -8,7 +8,7 @@
     position: relative;
 }
 
-.bud {
+.order-visit {
     background-image: url(../images/service-bud.jpg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -18,14 +18,14 @@
     text-align: center;
     padding-top: 69px;
     padding-bottom: 30px;
-    padding-left: 36px;
-    padding-right: 25px;
+    padding-left: 29px;
+    padding-right: 29px;
     position: absolute;
     top: 0;
     right: 20px;
 }
 
-.bud__text {
+.order-visit__text {
     font-weight: 500;
     font-size: 32px;
     line-height: 125%;
@@ -34,15 +34,7 @@
     margin-bottom: 109px;
 }
 
-.bud__button {
-    font-weight: 600;
-    font-size: 17px;
-    line-height: 21px;
-    text-transform: uppercase;
-    color: #ffffff;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+.order-visit__button {
     width: max-content;
 }
 
