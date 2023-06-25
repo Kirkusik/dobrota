@@ -1,0 +1,58 @@
+.doctor-service {
+    background-color: #fff;
+}
+
+.doctor-service__wrapper {
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    position: relative;
+    padding-top: 123px;
+    padding-bottom: 79px;
+    display: grid;
+    grid-template-columns: 1fr 436px;
+    overflow: hidden;
+}
+
+.doctor-service__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.doctor-service__info {
+    padding-left: 57px;
+    padding-right: 21px;
+}
+
+.doctor-service__title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 125%;
+    text-transform: uppercase;
+    color: #624696;
+    margin-top: 0;
+    margin-bottom: 43px;
+}
+
+.doctor-service__text {
+    font-size: 17px;
+    line-height: 147%;
+    color: #303a4c;
+    margin-top: 0;
+    margin-bottom: 49px;
+}
+
+.doctor-service__btn {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
+    text-transform: uppercase;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    color: #ffffff;
+    background-color: #979797;
+    border: none;
+    border-radius: 10px;
+    padding: 20px 40px;
+}

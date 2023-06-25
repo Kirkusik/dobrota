@@ -1,0 +1,74 @@
+.about-service {
+    background-color: #ffffff;
+    padding-top: 136px;
+    padding-bottom: 78px;
+}
+
+.about__wrapper {
+    position: relative;
+}
+
+.bud {
+    background-image: url(../images/service-bud.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 360px;
+    height: 362px;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 69px;
+    padding-bottom: 30px;
+    padding-left: 36px;
+    padding-right: 25px;
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+
+.bud__text {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 125%;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 109px;
+}
+
+.bud__button {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #ffffff;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    width: max-content;
+}
+
+.about-service__title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 125%;
+    color: #624696;
+    margin-top: 51px;
+    margin-bottom: 15px;
+}
+
+.about-service__symptoms {
+    margin-top: 29px;
+    margin-bottom: 20px;
+}
+
+.about-service__text {
+    font-size: 17px;
+    line-height: 147%;
+    color: #303a4c;
+    max-width: 760px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.about-service__item {
+    color: #616161;
+}
