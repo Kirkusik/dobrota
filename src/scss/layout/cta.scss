@@ -43,8 +43,7 @@
     color: #ffffff;
     margin-top: 0;
     @include mq(768) {
-        order: 1;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
     }
 }
 
@@ -61,6 +60,9 @@
 
 .cta__button {
     max-width: max-content;
+    @include mq(768) {
+        margin-bottom: 10px;
+    }
 }
 
 .cta__tel {
