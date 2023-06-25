@@ -50,6 +50,11 @@
     padding-bottom: 23px;
     padding-left: 25px;
     position: relative;
+    @include mq(510) {
+        padding-top: 18px;
+        padding-bottom: 18px;
+        padding-left: 18px;
+    }
 }
 
 .faq-item__title::after {
@@ -62,6 +67,9 @@
     position: absolute;
     right: 31px;
     top: 22px;
+    @include mq(510) {
+        top: 14px;
+    }
 }
 
 .faq-item__title::before {
@@ -75,6 +83,9 @@
     top: 35px;
     right: 39px;
     z-index: 1;
+    @include mq(510) {
+        top: 27px;
+    }
 }
 
 .faq__item[open] {
@@ -92,6 +103,9 @@
 .faq__item[open] > .faq-item__title::before {
     border-bottom-color: #f1821a;
     top: 26px;
+    @include mq(510) {
+        top: 18px;
+    }
 }
 
 .faq__item[open] .faq-item__title {
@@ -103,9 +117,17 @@
     display: none;
 }
 
-.faq-item__text {
+.faq-item__description {
     font-size: 15px;
     line-height: 147%;
     color: #1b2948;
     padding: 15px 25px 26px 25px;
+}
+
+.faq-item__text {
+    margin: 0;
+    @include mq(510) {
+        white-space: normal;
+        padding-right: 65px;
+    }
 }
