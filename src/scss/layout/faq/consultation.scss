@@ -1,0 +1,83 @@
+.faq-consultation {
+    position: relative;
+    background-color: #f2f2f2;
+    padding-top: 276px;
+    padding-bottom: 112px;
+    @include mq(1200) {
+        padding-top: 200px;
+        padding-bottom: 90px;
+    }
+    @include mq(992) {
+        padding-top: 140px;
+        padding-bottom: 80px;
+    }
+    @include mq(768) {
+        padding-top: 550px;
+        padding-bottom: 60px;
+    }
+    @include mq(576) {
+        padding-top: 350px;
+        padding-bottom: 40px;
+    }
+}
+
+.consultation-wrapper {
+    width: 50%;
+    padding-right: 40px;
+    @include mq(768) {
+        width: 100%;
+    }
+    @include mq(576) {
+        padding-right: 10px;
+    }
+}
+
+.faq-consultation__title {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #000000;
+    font-weight: 500;
+    @include fz(50, 24);
+    line-height: 114%;
+}
+
+.faq-consultation__accent {
+    color: #e17510;
+}
+
+.faq-consultation__text {
+    margin-top: 12px;
+    margin-bottom: 34px;
+    @include fz(17, 14);
+    line-height: 147%;
+    color: #303a4c;
+    @include mq(992) {
+        margin-bottom: 28px;
+    }
+    @include mq(576) {
+        margin-bottom: 20px;
+    }
+}
+
+.faq-consultation__link {
+    margin-top: 0;
+    @include fz(17, 14);
+    line-height: 20px;
+    letter-spacing: 0.5px;
+}
+
+.faq-consultation__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    @include mq(768) {
+        width: 100%;
+        height: 500px;
+    }
+    @include mq(576) {
+        height: 300px;
+    }
+}
