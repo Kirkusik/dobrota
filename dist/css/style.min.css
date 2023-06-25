@@ -954,13 +954,13 @@ template {
   .page-header__tel {
     padding: 0;
     border: none;
-    width: 28px;
-    height: 28px;
+    width: 24px;
+    height: 24px;
     background-image: url(../images/svg/cta-phone.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    margin-right: 20px;
+    margin-right: 14px;
   }
   .page-header__tel span {
     display: none;
@@ -2096,8 +2096,6 @@ template {
   background-color: #f2f2f2;
   padding-top: 140px;
   padding-bottom: 140px;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media (max-width: 1200px) {
   .faq {
@@ -2129,21 +2127,19 @@ template {
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid #dbe6ee;
   border-radius: 10px;
+}
+.faq__item:not(:last-child) {
   margin-bottom: 40px;
 }
 @media (max-width: 1200px) {
-  .faq__item {
+  .faq__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
 @media (max-width: 768px) {
-  .faq__item {
+  .faq__item:not(:last-child) {
     margin-bottom: 20px;
   }
-}
-
-.faq__item:last-child {
-  margin-bottom: 0;
 }
 
 .faq-item__title {
@@ -2152,16 +2148,18 @@ template {
   font-size: calc(14px + (21 - 14) * (100vw - 320px) / (1920 - 320));
   line-height: 133%;
   color: #624696;
+  cursor: pointer;
   padding-top: 24px;
   padding-bottom: 23px;
   padding-left: 25px;
   position: relative;
 }
-@media (max-width: 510px) {
+@media (max-width: 576px) {
   .faq-item__title {
     padding-top: 18px;
     padding-bottom: 18px;
     padding-left: 18px;
+    padding-right: 42px;
   }
 }
 
@@ -2176,9 +2174,10 @@ template {
   right: 31px;
   top: 22px;
 }
-@media (max-width: 510px) {
+@media (max-width: 576px) {
   .faq-item__title::after {
     top: 14px;
+    right: 12px;
   }
 }
 
@@ -2194,9 +2193,10 @@ template {
   right: 39px;
   z-index: 1;
 }
-@media (max-width: 510px) {
+@media (max-width: 576px) {
   .faq-item__title::before {
     top: 27px;
+    right: 20px;
   }
 }
 
@@ -2216,7 +2216,7 @@ template {
   border-bottom-color: #f1821a;
   top: 26px;
 }
-@media (max-width: 510px) {
+@media (max-width: 576px) {
   .faq__item[open] > .faq-item__title::before {
     top: 18px;
   }
@@ -2236,16 +2236,6 @@ template {
   line-height: 147%;
   color: #1b2948;
   padding: 15px 25px 26px 25px;
-}
-
-.faq-item__text {
-  margin: 0;
-}
-@media (max-width: 510px) {
-  .faq-item__text {
-    white-space: normal;
-    padding-right: 65px;
-  }
 }
 
 .faq-consultation {

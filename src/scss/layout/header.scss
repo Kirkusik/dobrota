@@ -128,13 +128,13 @@
 	@include mq(576) {
 		padding: 0;
 		border: none;
-		width: 28px;
-		height: 28px;
+		width: 24px;
+		height: 24px;
 		background-image: url(../images/svg/cta-phone.svg);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: contain;
-		margin-right: 20px;
+		margin-right: 14px;
 
 		& span {
 			display: none;
