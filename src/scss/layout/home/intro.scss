@@ -7,11 +7,16 @@
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	column-gap: 110px;
+
+	@include mq(992) {
+		grid-template-columns: 1fr;
+		row-gap: 40px;
+	}
 }
 
 .home-intro__title {
 	font-weight: 500;
-	font-size: 55px;
+	@include fz(55, 32);
 	line-height: 1;
 	letter-spacing: 1px;
 
@@ -23,7 +28,7 @@
 
 .home-intro__desc {
 	font-weight: 400;
-	font-size: 20px;
+	@include fz(20, 14);
 	line-height: 120%;
 
 	color: #616161;
@@ -34,12 +39,21 @@
 
 .home-intro_stats {
 	grid-column: 2 / 3;
+
+	@include mq(992) {
+		grid-column: span 1;
+	}
 }
 
 .home-intro__btn {
 	width: 350px;
 	display: block;
 	margin-bottom: 25px;
+
+	@include mq(576) {
+		width: 280px;
+		margin-bottom: 16px;
+	}
 }
 
 .home-intro__slider {
@@ -68,15 +82,24 @@
 	padding: 20px;
 
 	font-weight: 500;
-	font-size: 15px;
+	@include fz(15, 12);
 	line-height: 147%;
 	text-align: center;
 
 	color: #ffffff;
 
+	@include mq(576) {
+		width: 142px;
+		min-height: 142px;
+	}
+	@include mq(480) {
+		width: 100px;
+		min-height: 100px;
+	}
+
 	& span {
 		font-weight: 600;
-		@include fz(50, 32);
+		@include fz(50, 20);
 		line-height: 114%;
 	}
 }
@@ -91,6 +114,13 @@
 	position: relative;
 	padding-top: 80px;
 	padding-right: 192px;
+
+	@include mq(576) {
+		padding-right: 150px;
+	}
+	@include mq(480) {
+		padding-right: 100px;
+	}
 }
 
 .home-intro__slider-img {
@@ -100,11 +130,30 @@
 	&:nth-child(1) {
 		position: relative;
 		z-index: 1;
+		width: 100%;
+
+		@include mq(768) {
+			height: 350px;
+		}
+		@include mq(576) {
+			height: 300px;
+		}
+		@include mq(480) {
+			// width: 200px;
+		}
 	}
 	&:nth-child(2) {
 		position: absolute;
 		right: 0;
 		top: 0;
+
+		@include mq(768) {
+			height: 250px;
+		}
+		@include mq(576) {
+			height: 200px;
+			width: 50%;
+		}
 	}
 }
 
@@ -114,8 +163,16 @@
 	margin-bottom: 0;
 	list-style-type: none;
 
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
 	column-gap: 22px;
+
+	@include mq(576) {
+		column-gap: 10px;
+	}
+	@include mq(480) {
+		grid-template-columns: 1fr;
+	}
 }
 
 .home-intro__stats-item {
@@ -130,7 +187,7 @@
 
 	& span {
 		font-weight: 600;
-		font-size: 50px;
+		@include fz(50, 32);
 		line-height: 114%;
 		color: #f1821a;
 	}
