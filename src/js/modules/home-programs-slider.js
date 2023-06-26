@@ -10,6 +10,22 @@ export default function createHomeProgramsSlider(Swiper) {
 			initialSlide: 1,
 			loop: true,
 
+			breakpoints: {
+				320: {
+					slidesPerView: 1,
+					centeredSlides: false,
+					spaceBetween: 20,
+					initialSlide: 0,
+				},
+
+				576: {
+					slidesPerView: 2,
+					centeredSlides: true,
+					spaceBetween: 0,
+					initialSlide: 1,
+				},
+			},
+
 			pagination: {
 				el: ".swiper-pagination",
 				type: "bullets",

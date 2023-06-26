@@ -1,6 +1,11 @@
 .home-services {
 	padding-top: 60px;
 	padding-bottom: 60px;
+
+	@include mq(768) {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
 }
 
 .home-services__title {
@@ -18,6 +23,20 @@
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 40px;
+
+	@include mq(1200) {
+		margin-top: 100px;
+	}
+	@include mq(992) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	@include mq(576) {
+		grid-template-columns: auto;
+	}
+}
+
+.services__item {
+	display: grid;
 }
 
 .service__title {
@@ -35,6 +54,7 @@
 .service__img {
 	object-fit: cover;
 	border-radius: 10px;
+	width: 100%;
 }
 
 .service__desc {
@@ -51,4 +71,5 @@
 	line-height: 18px;
 	letter-spacing: 0.5px;
 	text-transform: uppercase;
+	margin-top: auto;
 }

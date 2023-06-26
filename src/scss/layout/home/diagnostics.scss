@@ -3,6 +3,15 @@
 	padding-bottom: 94px;
 
 	background-color: rgba(255, 255, 255, 0.8);
+
+	@include mq(1200) {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+	@include mq(992) {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
 }
 
 .home-diagnostics__list {
@@ -22,6 +31,23 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 380px 380px;
+
+	@include mq(1200) {
+		padding-top: 0;
+		padding-bottom: 0;
+		grid-template-columns: repeat(2, 300px);
+		background-size: 240px 240px;
+	}
+
+	@include mq(992) {
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 60px;
+		background-image: none;
+	}
+
+	@include mq(768) {
+		grid-template-columns: auto;
+	}
 }
 
 .home-diagnostics__item-title {
@@ -61,4 +87,8 @@
 	margin-right: auto;
 	margin-top: 78px;
 	width: max-content;
+
+	@include mq(992) {
+		margin-top: 60px;
+	}
 }
