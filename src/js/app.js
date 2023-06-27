@@ -3,6 +3,7 @@ import createHomeProgramsSlider from "./modules/home-programs-slider";
 import createHomeReviewsSlider from "./modules/home-reviews-slider";
 import menuHandler from "./modules/menu-handler";
 import createHomeBannerSlider from "./modules/home-banner-slider";
+import createReviewServiceSlider from "./modules/reviews-service";
 // import AOS from "aos";
 
 // AOS.init({
@@ -11,9 +12,9 @@ import createHomeBannerSlider from "./modules/home-banner-slider";
 Swiper.use([Navigation, Pagination, Autoplay, EffectFade]);
 
 document.addEventListener("DOMContentLoaded", function (event) {
-	createHomeProgramsSlider(Swiper);
-	createHomeReviewsSlider(Swiper);
-	createHomeBannerSlider(Swiper);
-
-	menuHandler();
+    createHomeProgramsSlider(Swiper);
+    createHomeReviewsSlider(Swiper);
+    createHomeBannerSlider(Swiper);
+    createReviewServiceSlider(Swiper);
+    menuHandler();
 });
