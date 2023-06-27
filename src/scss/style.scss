@@ -51,6 +51,12 @@
 //404
 @import "./layout/404/404.scss";
 
+// ABOUT
+@import "./layout/about/experience";
+@import "./layout/about/video";
+@import "./layout/about/doctors";
+@import "./layout/about/services";
+
 // ORDER FORM
 @import "layout/order-form";
 

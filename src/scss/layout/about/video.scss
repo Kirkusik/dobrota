@@ -1,0 +1,71 @@
+.about-video__link {
+	padding-top: 200px;
+	padding-bottom: 200px;
+	background-image: url(../images/about-video-bg.jpg);
+	background-size: cover;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	color: #000;
+
+	transition: color 0.5s;
+
+	&:hover {
+		color: #624696;
+	}
+
+	& svg {
+		margin-bottom: 40px;
+	}
+
+	@include mq(1200) {
+		padding-top: 160px;
+		padding-bottom: 160px;
+	}
+	@include mq(992) {
+		padding-top: 120px;
+		padding-bottom: 120px;
+
+		& svg {
+			width: 60px;
+			height: 60px;
+		}
+	}
+	@include mq(768) {
+		padding-top: 80px;
+		padding-bottom: 80px;
+
+		& svg {
+			width: 40px;
+			height: 40px;
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.about-video__text {
+	color: #624696;
+	text-align: center;
+	@include fz(50, 18);
+	font-weight: 600;
+	line-height: 114%;
+	text-transform: uppercase;
+
+	max-width: 60%;
+
+	margin-top: 0;
+	margin-bottom: 0;
+
+	@include mq(992) {
+		max-width: 70%;
+	}
+	@include mq(768) {
+		max-width: 80%;
+	}
+	@include mq(576) {
+		max-width: calc(100% - 40px);
+	}
+}

@@ -3,6 +3,18 @@
 	padding-bottom: 160px;
 
 	background-color: #614098;
+
+	@include mq(1200) {
+		padding-top: 60px;
+		padding-bottom: 100px;
+	}
+	@include mq(992) {
+		padding-bottom: 60px;
+	}
+	@include mq(768) {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
 }
 
 .home-order__container {
@@ -10,6 +22,14 @@
 	grid-template-columns: 480px 1fr;
 	column-gap: 80px;
 	align-items: center;
+
+	@include mq(1200) {
+		column-gap: 20px;
+	}
+	@include mq(992) {
+		grid-template-columns: 100%;
+		row-gap: 60px;
+	}
 }
 
 .home-order__title {
@@ -27,6 +47,10 @@
 	margin-top: 0;
 	margin-bottom: 70px;
 	max-width: 280px;
+
+	@include mq(992) {
+		margin-bottom: 40px;
+	}
 }
 
 .home-order__text {

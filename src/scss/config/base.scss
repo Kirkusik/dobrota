@@ -75,6 +75,8 @@
 	cursor: pointer;
 	text-align: center;
 
+	max-width: 100%;
+
 	@include mq(1200) {
 		padding: 10px 20px;
 	}
@@ -206,8 +208,14 @@
 	margin-bottom: 30px;
 
 	font-weight: 500;
-	font-size: 21px;
-	line-height: 26px;
+	@include fz(21, 16);
+	line-height: 125%;
+
+	@include mq(1200) {
+		padding-left: 60px;
+		min-height: 40px;
+		background-size: 40px 40px;
+	}
 
 	&--white {
 		color: #fff;
@@ -325,4 +333,118 @@
 			background-image: url(../images/svg/arrow-right-violet.svg);
 		}
 	}
+}
+
+.rotated-wrapper {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 40px;
+
+	@include mq(1200) {
+		column-gap: 20px;
+	}
+	@include mq(992) {
+		grid-template-columns: 100%;
+		row-gap: 40px;
+	}
+}
+
+.rotated-item {
+	display: flex;
+	margin: 0;
+
+	&:nth-child(1) {
+		flex-direction: column-reverse;
+	}
+	&:nth-child(2) {
+		flex-direction: column;
+
+		@include mq(992) {
+			flex-direction: column-reverse;
+		}
+	}
+}
+
+.rotated-img {
+	border-radius: 10px;
+	object-fit: cover;
+	width: 100%;
+
+	@include mq(992) {
+		height: 300px;
+	}
+}
+
+.rotated-title {
+	text-align: left;
+	margin-bottom: 18px;
+}
+
+.rotated-text {
+	color: #303a4c;
+	font-size: 16px;
+	line-height: 147%;
+
+	margin-top: 0;
+	margin-bottom: 18px;
+}
+
+.rotated-list {
+	padding-left: 0;
+	margin: 0;
+	list-style-type: none;
+
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: space-between;
+
+	@include mq(576) {
+		grid-template-columns: 100%;
+		row-gap: 20px;
+	}
+}
+
+.rotated-list__item {
+	display: flex;
+	align-items: center;
+	min-height: 46px;
+
+	color: #616161;
+	font-size: 16px;
+	font-weight: 500;
+
+	& svg {
+		margin-right: 14px;
+	}
+}
+
+.rotated-stats {
+	padding-left: 0;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	list-style-type: none;
+
+	display: flex;
+	column-gap: 10px;
+
+	@include mq(576) {
+		flex-direction: column;
+		row-gap: 20px;
+	}
+}
+
+.rotated-stats__nums {
+	color: #f1821a;
+	@include fz(50, 32);
+	font-weight: 600;
+	line-height: 114%;
+	margin-top: 0;
+	margin-bottom: 12px;
+}
+
+.rotated-stats__text {
+	color: #616161;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 22px;
 }

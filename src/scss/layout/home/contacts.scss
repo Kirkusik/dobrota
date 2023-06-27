@@ -5,6 +5,11 @@
 .home-contacts__container {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
+
+	@include mq(992) {
+		grid-template-columns: 100%;
+		padding-bottom: 320px;
+	}
 }
 
 .home-contacts__map {
@@ -13,6 +18,12 @@
 	top: 0;
 	width: 50%;
 	height: 100%;
+
+	@include mq(992) {
+		top: calc(100% - 300px);
+		width: 100%;
+		height: 300px;
+	}
 }
 
 .home-contacts__wrapper {
@@ -20,6 +31,18 @@
 	padding-top: 140px;
 	padding-bottom: 40px;
 	padding-left: 60px;
+
+	@include mq(1200) {
+		padding-top: 100px;
+	}
+	@include mq(992) {
+		padding-top: 80px;
+		padding-left: 0;
+		grid-column: span 1;
+	}
+	@include mq(768) {
+		padding-top: 40px;
+	}
 }
 
 .home-contacts__title {
@@ -37,38 +60,35 @@
 	margin-bottom: 42px;
 }
 
-.home-contacts__schedule {
-	padding-left: 80px;
-	background-image: url(../images/svg/clock.svg);
+.home-contacts__item {
 	background-repeat: no-repeat;
 	background-position: left center;
 	background-size: 60px 60px;
 	min-height: 60px;
-
-	font-weight: 500;
-	font-size: 20px;
-	line-height: 140%;
-	color: #616161;
-
-	margin-top: 0;
-	margin-bottom: 40px;
-}
-
-.home-contacts__adddress {
 	padding-left: 80px;
-	background-image: url(../images/svg/pin.svg);
-	background-repeat: no-repeat;
-	background-position: left center;
-	background-size: 60px 60px;
-	min-height: 60px;
 
 	font-weight: 500;
-	font-size: 20px;
+	@include fz(20, 16);
 	line-height: 135%;
 	color: #616161;
 
 	margin-top: 0;
-	margin-bottom: 55px;
+
+	@include mq(1200) {
+		padding-left: 60px;
+		min-height: 40px;
+		background-size: 40px 40px;
+	}
+
+	&--schedule {
+		background-image: url(../images/svg/clock.svg);
+		margin-bottom: 40px;
+	}
+
+	&--adddress {
+		background-image: url(../images/svg/pin.svg);
+		margin-bottom: 55px;
+	}
 }
 
 .home-contaacts__info {
@@ -84,4 +104,11 @@
 	font-size: 16px;
 	line-height: 112%;
 	color: #616161;
+
+	@include mq(1200) {
+		padding-left: 60px;
+		min-height: 40px;
+		background-size: 30px 30px;
+		background-position: left 5px top;
+	}
 }
