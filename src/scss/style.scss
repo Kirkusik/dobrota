@@ -57,8 +57,17 @@
 @import "./layout/about/video";
 @import "./layout/about/doctors";
 @import "./layout/about/services";
+@import "./layout/about/contacts";
+@import "./layout/about/research";
+@import "./layout/about/order-form";
+
+// SALE
+@import "./layout/sale/list";
 
 // ORDER FORM
 @import "layout/order-form";
+
+// pagination
+@import "layout/pagination";
 
 @import "layout/footer";

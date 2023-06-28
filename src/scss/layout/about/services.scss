@@ -2,6 +2,19 @@
 	padding-top: 140px;
 	padding-bottom: 140px;
 	background-color: #dbe6ee;
+
+	@include mq(1200) {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+	@include mq(992) {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+	@include mq(768) {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
 }
 
 .about-services__wrapper {
@@ -9,17 +22,33 @@
 	display: grid;
 	grid-template-columns: 530px 1fr;
 	column-gap: 70px;
+
+	@include mq(1200) {
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 40px;
+	}
+	@include mq(992) {
+		grid-template-columns: 100%;
+	}
 }
 
 .about-services__img {
 	object-fit: cover;
 	width: 100%;
 	border-radius: 20px;
+
+	@include mq(992) {
+		display: none;
+	}
 }
 
 .about-services__title {
 	text-align: left;
 	margin-bottom: 30px;
+
+	@include mq(1200) {
+		margin-bottom: 20px;
+	}
 }
 
 .about-services__text {
@@ -28,4 +57,94 @@
 	line-height: 25px;
 	margin-top: 0;
 	margin-bottom: 100px;
+
+	@include mq(1200) {
+		margin-bottom: 60px;
+	}
+}
+
+.about-services__stats {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-areas:
+		"stat1 mainStat"
+		"stat2 mainStat";
+	column-gap: 40px;
+
+	@include mq(768) {
+		column-gap: 20px;
+	}
+	@include mq(480) {
+		grid-template-columns: 100%;
+		grid-template-areas:
+			"stat1 "
+			"stat2 "
+			"mainStat";
+	}
+}
+
+.about-services__stats-item {
+	border: 1px solid #dbe6ee;
+	background-color: rgba(255, 255, 255, 0.8);
+	display: flex;
+	align-items: center;
+
+	color: #624696;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 32px 30px;
+
+	@include mq(1200) {
+		padding: 24px;
+	}
+	@include mq(768) {
+		padding: 16px;
+	}
+
+	&:nth-child(1) {
+		grid-area: stat1;
+	}
+	&:nth-child(2) {
+		grid-area: stat2;
+	}
+
+	& svg {
+		margin-right: 15px;
+	}
+}
+
+.about-services__main-stat {
+	grid-area: mainStat;
+	align-self: center;
+
+	border-radius: 240px;
+	background-color: #624696;
+	width: 240px;
+	height: 240px;
+	padding: 30px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	color: #fff;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 22px;
+	text-align: center;
+
+	@include mq(1200) {
+		width: 180px;
+		height: 180px;
+	}
+	@include mq(480) {
+		justify-self: center;
+	}
+
+	& span {
+		@include fz(65, 32);
+		font-weight: 600;
+		line-height: 114%;
+	}
 }

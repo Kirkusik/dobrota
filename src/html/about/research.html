@@ -1,0 +1,58 @@
+<section class="about-research">
+	<div class="container">
+		<figure class="about-research__wrapper">
+			<img
+				src="./images/about-research-img.jpg"
+				alt=""
+				class="about-research__img"
+				width="560"
+				height="560"
+			/>
+
+			<figcaption class="about-research__desc">
+				<h2 class="section-title section-title--violet about-research__title">
+					Новые подходы в направлении исследований
+				</h2>
+
+				<p class="about-research__subtitle">
+					Mattis rhoncus urna neque viverra justo nec ultrices dui. Amet est
+					placerat in egestas. Elementum curabitur vitae nunc sed velit
+					dignissim sodales
+				</p>
+
+				<ul class="about-research__list">
+					<li
+						class="about-research__item"
+						data-color="#D88A4D"
+						data-width="97%"
+					>
+						Retinal Screening <span>97%</span>
+					</li>
+					<li
+						class="about-research__item"
+						data-color="#B86333"
+						data-width="99%"
+					>
+						Imaging and Lipiflow Treatments <span>99%</span>
+					</li>
+					<li
+						class="about-research__item"
+						data-color="#EBC674"
+						data-width="95%"
+					>
+						Optical Coherence Tomography (OCT) <span>95%</span>
+					</li>
+				</ul>
+
+				<script>
+					[...document.querySelectorAll(".about-research__item")].forEach(
+						(el) => {
+							el.style.setProperty("--width", el.dataset.width);
+							el.style.setProperty("--bg-color", el.dataset.color);
+						}
+					);
+				</script>
+			</figcaption>
+		</figure>
+	</div>
+</section>

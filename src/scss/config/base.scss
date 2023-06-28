@@ -100,6 +100,7 @@
 
 .btn-transparent {
 	@extend %btn;
+	background-color: transparent;
 
 	&--orange {
 		border: 2px solid #f1821a;
@@ -308,7 +309,7 @@
 
 .link-w-arrow {
 	color: #f1821a;
-	transition: color 0.5s;
+	transition: color 0.2s;
 
 	&:hover {
 		color: #624696;
