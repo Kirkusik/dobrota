@@ -6,6 +6,12 @@ export default function createReviewServiceSlider(Swiper) {
         const swiper = new Swiper(reviewServiceSlider, {
             grabCursor: true,
             slidesPerView: 1,
+
+            pagination: {
+                el: ".swiper-pagination",
+                type: "bullets",
+                clickable: true,
+            },
         });
     }
 }
