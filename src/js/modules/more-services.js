@@ -5,6 +5,7 @@ export default function createMoreServicesSlider(Swiper) {
             grabCursor: true,
             slidesPerView: 3,
             spaceBetween: 48,
+            autoplay: true,
             pagination: {
                 el: ".swiper-pagination",
                 type: "bullets",
