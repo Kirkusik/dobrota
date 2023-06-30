@@ -17,15 +17,23 @@
     padding-bottom: 110px;
     width: 50%;
     padding-right: 70px;
+    @include mq(1200) {
+        padding-top: 40px;
+        padding-bottom: 80px;
+        padding-right: 55px;
+    }
 }
 
 .reviews-service__title {
     font-weight: 600;
-    font-size: 50px;
+    @include fz(50, 28);
     line-height: 114%;
     color: #624696;
     margin-top: 0;
     margin-bottom: 28px;
+    @include mq(1200) {
+        margin-bottom: 20px;
+    }
 }
 
 .reviews-service__slider-wrapper {
@@ -39,6 +47,9 @@
     background-color: #fff;
     border-radius: 20px;
     padding: 50px 50px;
+    @include mq(1200) {
+        padding: 40px 40px;
+    }
 }
 
 .reviews-service__slider-grade {
@@ -54,6 +65,9 @@
 .reviews-service__slider-text {
     margin-top: 0;
     margin-bottom: 30px;
+    @include mq(1200) {
+        margin-bottom: 20px;
+    }
 }
 
 .reviews-service__swiper-pagination {

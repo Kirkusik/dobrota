@@ -2,6 +2,10 @@
     padding-top: 61px;
     padding-bottom: 102px;
     background-color: #fff;
+    @include mq(1200) {
+        padding-top: 45px;
+        padding-bottom: 80px;
+    }
 }
 
 .more-services__title {
@@ -9,16 +13,25 @@
     margin-top: 0;
     margin-bottom: 32px;
     color: #624696;
-    font-size: 40px;
+    @include fz(40, 24);
     font-weight: 500;
     line-height: 113%;
     max-width: 680px;
     margin-left: auto;
     margin-right: auto;
+    @include mq(1200) {
+        min-width: 600px;
+    }
 }
 
 .more-services__slider {
     max-width: 1512px;
+    @include mq(1600) {
+        max-width: 1200px;
+    }
+    @include mq(1200) {
+        max-width: 1000px;
+    }
 }
 
 .more-services__slider-wrapper {
@@ -27,6 +40,9 @@
     margin-bottom: 56px;
     list-style: none;
     position: relative;
+    @include mq(1200) {
+        margin-bottom: 50px;
+    }
 }
 
 .more-services__slider-item {
@@ -45,7 +61,7 @@
     display: none;
     align-items: center;
     justify-content: center;
-    font-size: 40px;
+    @include fz(40, 24);
     font-weight: 600;
     line-height: 125%;
     letter-spacing: 2px;

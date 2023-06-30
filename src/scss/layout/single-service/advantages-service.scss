@@ -2,6 +2,10 @@
     background-color: #e69d59;
     padding-top: 140px;
     padding-bottom: 140px;
+    @include mq(1200) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 }
 
 .advantages-service p,
