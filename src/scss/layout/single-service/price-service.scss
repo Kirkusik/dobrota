@@ -6,6 +6,13 @@
         padding-top: 60px;
         padding-bottom: 90px;
     }
+    @include mq(768) {
+        padding-bottom: 60px;
+    }
+    @include mq(576) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 }
 
 .price-service__designate {
@@ -19,6 +26,9 @@
     @include mq(1200) {
         margin-bottom: 30px;
     }
+    @include mq(768) {
+        margin-bottom: 20px;
+    }
 }
 
 .price-service__wrapper {
@@ -28,6 +38,12 @@
     grid-auto-rows: minmax(0, auto);
     @include mq(1200) {
         column-gap: 35px;
+    }
+    @include mq(768) {
+        column-gap: 20px;
+    }
+    @include mq(576) {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -49,6 +65,11 @@
     color: #624696;
     width: calc(100% + 2px);
     transform: translate(-1px, -1px);
+    @include mq(576) {
+        padding-left: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
 }
 
 .price-service__title::after {
@@ -122,6 +143,9 @@
     justify-content: space-between;
     padding-left: 37px;
     padding-right: 41px;
+    @include mq(768) {
+        flex-direction: column;
+    }
 }
 
 .list__item:last-child {

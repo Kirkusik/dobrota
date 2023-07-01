@@ -10,6 +10,9 @@
     top: 0;
     width: 50%;
     object-fit: cover;
+    @include mq(768) {
+        display: none;
+    }
 }
 
 .reviews-service__container {
@@ -21,6 +24,17 @@
         padding-top: 40px;
         padding-bottom: 80px;
         padding-right: 55px;
+    }
+    @include mq(992) {
+        padding-top: 30px;
+        padding-bottom: 60px;
+        padding-right: 35px;
+    }
+    @include mq(768) {
+        width: 100%;
+        padding-top: 40px;
+        text-align: center;
+        padding-right: 0;
     }
 }
 
@@ -50,6 +64,9 @@
     @include mq(1200) {
         padding: 40px 40px;
     }
+    @include mq(768) {
+        padding: 30px 30px;
+    }
 }
 
 .reviews-service__slider-grade {
@@ -72,4 +89,7 @@
 
 .reviews-service__swiper-pagination {
     justify-content: start;
+    @include mq(768) {
+        justify-content: center;
+    }
 }
