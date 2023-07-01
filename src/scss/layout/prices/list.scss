@@ -1,0 +1,93 @@
+.prices {
+	padding-top: 140px;
+	padding-bottom: 140px;
+	background-color: #f3f9fd;
+
+	@include mq(1200) {
+		padding-top: 80px;
+		padding-bottom: 100px;
+	}
+	@include mq(992) {
+		padding-top: 60px;
+		padding-bottom: 80px;
+	}
+	@include mq(768) {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+}
+
+.prices__container {
+	display: grid;
+	grid-template-columns: 360px 1fr;
+	column-gap: 40px;
+}
+
+.prices__filter {
+	align-self: start;
+
+	padding: 30px;
+	margin: 0;
+	list-style-type: none;
+
+	border: 1px solid #bbd0fc;
+}
+
+.prices__filter-item {
+	display: flex;
+	margin-bottom: 21px;
+}
+
+.prices__filter-link {
+	color: #000;
+	font-size: 17px;
+
+	&--active {
+		color: #f1821a;
+	}
+}
+
+.prices__list {
+	padding: 30px 50px;
+	margin: 0;
+	list-style-type: none;
+	border: 1px solid #dbe6ee;
+	background: rgba(255, 255, 255, 0.8);
+}
+
+.prices__list-item {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	row-gap: 10px;
+
+	padding-bottom: 22px;
+	padding-top: 20px;
+
+	color: #000;
+	@include fz(21, 18);
+	line-height: 133%;
+
+	&:not(:last-child) {
+		border-bottom: 1px solid #dbe6ee;
+	}
+}
+
+.prices__item-title {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.prices__item-price {
+	font-weight: 600;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.prices__item-desc {
+	color: #1b2948;
+	font-size: 12px;
+	line-height: 18px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
