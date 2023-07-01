@@ -20,3 +20,75 @@
 .prices-excellents__title {
 	text-align: left;
 }
+
+.prices-excellents__posts {
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	list-style-type: none;
+
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 30px;
+}
+
+.prices-excellents__post {
+	display: flex;
+}
+
+.prices-excellents__post-title {
+	margin-top: 20px;
+	margin-bottom: 14px;
+
+	color: #624696;
+	@include fz(26, 18);
+	font-weight: 500;
+}
+
+.prices-excellents__post-excerpt {
+	color: #303a4c;
+	@include fz(17, 14);
+	line-height: 147%;
+
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.prices-excellents__stats {
+	padding-left: 0;
+	margin-top: 50px;
+	margin-bottom: 0;
+	list-style-type: none;
+
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 40px;
+
+	@include mq(768) {
+		grid-template-columns: 100%;
+		row-gap: 20px;
+	}
+}
+
+.prices-excellents__stats-item {
+	background-color: #f3f9fd;
+	padding: 46px 40px;
+	text-align: center;
+
+	color: #1b2948;
+	font-size: 17px;
+
+	@include mq(992) {
+		padding: 24px;
+	}
+}
+
+.prices-excellents__stats-num {
+	color: #f1821a;
+	@include fz(46, 24);
+	line-height: 1;
+	font-weight: 600;
+	margin-bottom: 16px;
+
+	display: block;
+}
