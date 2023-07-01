@@ -4,6 +4,7 @@ import createHomeReviewsSlider from "./modules/home-reviews-slider";
 import menuHandler from "./modules/menu-handler";
 import createHomeBannerSlider from "./modules/home-banner-slider";
 import createReviewServiceSlider from "./modules/reviews-service";
+import createMoreServicesSlider from "./modules/more-services";
 // import AOS from "aos";
 
 // AOS.init({
@@ -16,5 +17,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
     createHomeReviewsSlider(Swiper);
     createHomeBannerSlider(Swiper);
     createReviewServiceSlider(Swiper);
+    createMoreServicesSlider(Swiper);
     menuHandler();
 });

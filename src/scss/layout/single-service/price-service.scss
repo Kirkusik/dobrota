@@ -2,15 +2,23 @@
     background-color: #fff;
     padding-top: 84px;
     padding-bottom: 115px;
+    @include mq(1200) {
+        padding-top: 60px;
+        padding-bottom: 90px;
+    }
 }
 
 .price-service__designate {
     font-weight: 500;
-    font-size: 40px;
+    @include fz(40, 24);
     line-height: 142%;
     color: #624696;
     margin-top: 0;
+    margin-bottom: 40px;
     text-align: center;
+    @include mq(1200) {
+        margin-bottom: 30px;
+    }
 }
 
 .price-service__wrapper {
@@ -18,6 +26,9 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 54px;
     grid-auto-rows: minmax(0, auto);
+    @include mq(1200) {
+        column-gap: 35px;
+    }
 }
 
 .price-service__item {
