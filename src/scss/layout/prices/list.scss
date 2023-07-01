@@ -21,6 +21,15 @@
 	display: grid;
 	grid-template-columns: 360px 1fr;
 	column-gap: 40px;
+
+	@include mq(1200) {
+		grid-template-columns: 300px 1fr;
+		column-gap: 20px;
+	}
+	@include mq(992) {
+		grid-template-columns: 100%;
+		row-gap: 40px;
+	}
 }
 
 .prices__filter {
@@ -31,20 +40,42 @@
 	list-style-type: none;
 
 	border: 1px solid #bbd0fc;
+
+	@include mq(992) {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 20px;
+	}
 }
 
 .prices__filter-item {
 	display: flex;
-	margin-bottom: 21px;
+
+	&:not(:last-child) {
+		margin-bottom: 21px;
+
+		@include mq(992) {
+			margin-bottom: 0;
+		}
+	}
 }
 
 .prices__filter-link {
 	color: #000;
-	font-size: 17px;
+	@include fz(17, 14);
 
 	&--active {
 		color: #f1821a;
 	}
+}
+
+.prices__item-title {
+	margin-top: 0;
+	margin-bottom: 30px;
+
+	color: #624696;
+	@include fz(26, 18);
+	font-weight: 700;
 }
 
 .prices__list {
@@ -53,12 +84,18 @@
 	list-style-type: none;
 	border: 1px solid #dbe6ee;
 	background: rgba(255, 255, 255, 0.8);
+
+	@include mq(1200) {
+		padding: 20px 40px;
+	}
+	@include mq(992) {
+		padding: 16px 24px;
+	}
 }
 
 .prices__list-item {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: 1fr max-content;
 	row-gap: 10px;
 
 	padding-bottom: 22px;
@@ -73,21 +110,23 @@
 	}
 }
 
-.prices__item-title {
+.prices__list-title {
 	margin-top: 0;
 	margin-bottom: 0;
 }
 
-.prices__item-price {
+.prices__list-price {
 	font-weight: 600;
 	margin-top: 0;
 	margin-bottom: 0;
 }
 
-.prices__item-desc {
+.prices__list-desc {
 	color: #1b2948;
 	font-size: 12px;
 	line-height: 18px;
 	margin-top: 0;
 	margin-bottom: 0;
+
+	grid-column: span 2;
 }

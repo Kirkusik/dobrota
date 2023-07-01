@@ -1,128 +1,127 @@
 .about-service {
-    background-color: #ffffff;
-    padding-top: 136px;
-    padding-bottom: 78px;
-    @include mq(1200) {
-        padding-top: 100px;
-        padding-bottom: 60px;
-    }
-    @include mq(992) {
-        padding-top: 80px;
-        padding-bottom: 140px;
-    }
-    @include mq(768) {
-        padding-top: 60px;
-        padding-bottom: 80px;
-    }
+	background-color: #ffffff;
+	padding-top: 136px;
+	padding-bottom: 78px;
+	@include mq(1200) {
+		padding-top: 100px;
+		padding-bottom: 60px;
+	}
+	@include mq(992) {
+		padding-top: 80px;
+		padding-bottom: 140px;
+	}
+	@include mq(768) {
+		padding-top: 60px;
+		padding-bottom: 80px;
+	}
 }
 
 .about-service__container {
-    display: grid;
-    grid-template-columns: 1fr 360px;
-    gap: 40px;
-    @include mq(1200) {
-        gap: 20px;
-        grid-template-columns: 1fr 300px;
-    }
-    @include mq(992) {
-        grid-template-columns: 1fr;
-    }
+	display: grid;
+	grid-template-columns: 1fr 360px;
+	gap: 40px;
+
+	@include mq(1200) {
+		gap: 20px;
+		grid-template-columns: 1fr 300px;
+	}
+	@include mq(992) {
+		grid-template-columns: 1fr;
+	}
 }
 
 .about-service__img {
-    height: auto;
+	height: auto;
 }
 
 .about-service__title {
-    font-weight: 500;
-    @include fz(32, 18);
-    line-height: 125%;
-    color: #624696;
-    margin-top: 51px;
-    margin-bottom: 15px;
-    @include mq(1200) {
-        margin-top: 35px;
-    }
-    @include mq(992) {
-        margin-top: 25px;
-    }
-    @include mq(768) {
-        margin-top: 20px;
-    }
+	font-weight: 500;
+	@include fz(32, 18);
+	line-height: 125%;
+	color: #624696;
+	margin-top: 51px;
+	margin-bottom: 15px;
+	@include mq(1200) {
+		margin-top: 35px;
+	}
+	@include mq(992) {
+		margin-top: 25px;
+	}
+	@include mq(768) {
+		margin-top: 20px;
+	}
 }
 
 .about-service__symptoms {
-    margin-top: 29px;
-    margin-bottom: 20px;
+	margin-top: 29px;
+	margin-bottom: 20px;
 }
 
 .about-service__text {
-    @include fz(17, 14);
-    line-height: 147%;
-    color: #303a4c;
-    margin-top: 0;
-    margin-bottom: 0;
+	@include fz(17, 14);
+	line-height: 147%;
+	color: #303a4c;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .about-service__item {
-    color: #616161;
+	color: #616161;
 }
 
 .order-visit {
-    text-align: center;
-    padding-top: 69px;
-    padding-left: 25px;
-    padding-right: 25px;
-    position: relative;
-    @include mq(992) {
-        max-width: 50%;
-        margin: auto;
-        padding-top: 60px;
-    }
-    @include mq(768) {
-        padding-top: 40px;
-    }
-    @include mq(500) {
-        padding-top: 20px;
-    }
+	text-align: center;
+	padding: 40px 25px;
+	position: relative;
+
+	@include mq(992) {
+		width: max-content;
+		max-width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	@include mq(576) {
+		padding-top: 20px;
+	}
 }
 
 .order-visit__img {
-    border-radius: 20px;
-    position: absolute;
-    width: 100%;
-    height: auto;
-    top: 0;
-    right: 0;
-    @include mq(992) {
-        width: 360px;
-    }
+	border-radius: 20px;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	object-fit: cover;
 }
 
 .order-visit__text {
-    font-weight: 500;
-    @include fz(32, 18);
-    line-height: 125%;
-    color: #ffffff;
-    margin-top: 0;
-    margin-bottom: 109px;
-    position: relative;
-    z-index: 1;
-    @include mq(992) {
-        margin-bottom: 150px;
-    }
-    @include mq(768) {
-        margin-bottom: 65px;
-    }
+	font-weight: 500;
+	@include fz(32, 18);
+	line-height: 125%;
+	color: #ffffff;
+	margin-top: 0;
+	margin-bottom: 109px;
+	position: relative;
+	z-index: 1;
+
+	@include mq(992) {
+		margin-bottom: 80px;
+	}
+	@include mq(768) {
+		margin-bottom: 65px;
+	}
 }
 
 .order-visit__button {
-    position: relative;
-    z-index: 1;
-    padding-left: 30px;
-    padding-right: 30px;
-    @include mq(768) {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
+	position: relative;
+	z-index: 1;
+	padding-left: 30px;
+	padding-right: 30px;
+
+	@include mq(768) {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 }

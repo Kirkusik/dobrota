@@ -1,0 +1,22 @@
+.prices-excellents {
+	padding-top: 140px;
+	padding-bottom: 140px;
+	background-color: #fff;
+
+	@include mq(1200) {
+		padding-top: 80px;
+		padding-bottom: 100px;
+	}
+	@include mq(992) {
+		padding-top: 60px;
+		padding-bottom: 80px;
+	}
+	@include mq(768) {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+}
+
+.prices-excellents__title {
+	text-align: left;
+}
