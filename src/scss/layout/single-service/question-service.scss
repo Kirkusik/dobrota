@@ -52,15 +52,14 @@
     color: #616161;
     width: calc(100% + 2px);
     transform: translate(-1px, -1px);
+    overflow-wrap: break-word;
+    padding-right: 80px;
     @include mq(1200) {
         padding-top: 20px;
         padding-bottom: 20px;
     }
     @include mq(768) {
         padding-left: 25px;
-        padding-right: 80px;
-    }
-    @include mq(576) {
     }
 }
 
