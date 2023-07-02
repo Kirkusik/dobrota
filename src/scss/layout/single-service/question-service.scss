@@ -7,6 +7,9 @@
     @include mq(992) {
         padding-bottom: 80px;
     }
+    @include mq(576) {
+        padding-bottom: 60px;
+    }
 }
 
 .question-service__title {
@@ -55,6 +58,9 @@
     }
     @include mq(768) {
         padding-left: 25px;
+        padding-right: 80px;
+    }
+    @include mq(576) {
     }
 }
 
