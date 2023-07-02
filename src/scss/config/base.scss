@@ -226,12 +226,20 @@
 		color: #fff;
 	}
 
+	&--violet {
+		color: #624696;
+	}
+
 	&--tel {
 		background-image: url(../images/svg/icon-phone.svg);
 	}
 
 	&--email {
 		background-image: url(../images/svg/icon-envelope.svg);
+	}
+
+	&--location {
+		background-image: url(../images/svg/map-marker.svg);
 	}
 
 	& a {
