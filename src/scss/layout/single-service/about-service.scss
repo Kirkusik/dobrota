@@ -33,6 +33,12 @@
 
 .about-service__img {
 	height: auto;
+
+	@include mq(370) {
+		width: 280px;
+		display: block;
+		margin: 0 auto;
+	}
 }
 
 .about-service__title {
