@@ -73,6 +73,11 @@
     margin-top: 0;
     margin-bottom: 21px;
     background-image: url("../images/rating.jpg");
+    background-repeat: no-repeat;
+    height: 20px;
+    @include mq(768) {
+        background-position: center;
+    }
 }
 
 .reviews-service__slider-citation {
