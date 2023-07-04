@@ -1,0 +1,21 @@
+.map {
+    background-color: #f3f9fd;
+}
+
+.map__title {
+    margin-top: 0;
+    margin-bottom: 43px;
+    color: #624696;
+    text-align: center;
+    @include fz(50, 28);
+    font-weight: 700;
+    line-height: 114%;
+}
+
+.map__accent {
+    color: #e17510;
+}
+
+.map__iframe {
+    width: 100%;
+}
