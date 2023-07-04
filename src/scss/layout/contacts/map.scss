@@ -10,6 +10,9 @@
     @include fz(50, 28);
     font-weight: 700;
     line-height: 114%;
+    @include mq(576) {
+        margin-bottom: 20px;
+    }
 }
 
 .map__accent {
@@ -18,4 +21,7 @@
 
 .map__iframe {
     width: 100%;
+    @include mq(576) {
+        height: 300px;
+    }
 }
