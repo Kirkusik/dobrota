@@ -60,3 +60,21 @@
 	color: #ffffff;
 	margin: 0;
 }
+
+.home-order__form-wrapper {
+	& form {
+		max-width: 600px;
+		background-color: #f3f9fd;
+		display: grid;
+		padding: 36px 60px 60px;
+		border-radius: 10px;
+
+		@include mq(1200) {
+			padding: 24px 40px 40px;
+		}
+		@include mq(768) {
+			padding: 24px;
+			max-width: 100%;
+		}
+	}
+}

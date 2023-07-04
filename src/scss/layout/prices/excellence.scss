@@ -30,10 +30,23 @@
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	column-gap: 30px;
+
+	@include mq(768) {
+		grid-template-columns: 100%;
+		row-gap: 40px;
+	}
 }
 
 .prices-excellents__post {
 	display: flex;
+}
+
+.prices-excellents__post-img {
+	object-fit: cover;
+
+	@include mq(576) {
+		height: 250px;
+	}
 }
 
 .prices-excellents__post-title {
