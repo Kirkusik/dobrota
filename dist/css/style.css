@@ -1652,9 +1652,6 @@ template {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-.no-webp .home-diagnostics__list {
-  background-image: url(../images/diagnostics.png); }
-
 .home-diagnostics__list {
   padding-left: 0;
   padding-top: 60px;
@@ -1670,6 +1667,7 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
   row-gap: 48px;
+  background-image: url(../images/diagnostics.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 380px 380px;
@@ -1981,10 +1979,8 @@ template {
   color: #616161;
 }
 
-.no-webp .services-banner {
-  background-image: url("../images/services-banner.jpg"); }
-
 .services-banner {
+  background-image: url(../images/services-banner.jpg);
   background-size: cover;
   background-position: center center;
   padding-top: 226px;
@@ -2185,10 +2181,8 @@ template {
       align-self: center;
 }
 
-.no-webp .services-promo {
-  background-image: url(../images/services-promo.jpg); }
-
 .services-promo {
+  background-image: url(../images/services-promo.jpg);
   background-size: cover;
   background-position: right top;
   padding-top: 92px;
@@ -2706,12 +2700,10 @@ template {
   padding: 50px 50px;
 }
 
-.no-webp .reviews-service__slider-grade {
-  background-image: url("../images/rating.jpg"); }
-
 .reviews-service__slider-grade {
   margin-top: 0;
   margin-bottom: 21px;
+  background-image: url("../images/rating.jpg");
   background-repeat: no-repeat;
   height: 20px;
 }
@@ -2943,12 +2935,10 @@ template {
   background-color: #fff;
 }
 
-.no-webp .about-video__link {
-  background-image: url(../images/about-video-bg.jpg); }
-
 .about-video__link {
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: url(../images/about-video-bg.jpg);
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4468,7 +4458,7 @@ template {
   }
 
   .services-banner {
-    padding-top: 150px;
+    padding-top: 120px;
     padding-bottom: 70px;
   }
 
@@ -4518,14 +4508,12 @@ template {
     row-gap: 8px;
   }
 
-  .no-webp .services-promo {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url(../images/services-promo.jpg);
-    background-image: -o-linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/services-promo.jpg);
-    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/services-promo.jpg); }
-
   .services-promo {
     padding-top: 55px;
     padding-bottom: 70px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url(../images/services-promo.jpg);
+    background-image: -o-linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/services-promo.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/services-promo.jpg);
   }
 
   .services-promo__title {
@@ -6082,19 +6070,4 @@ template {
   .order-form__element {
     max-width: 100%;
   }
-}
-
-.webp .home-diagnostics__list { background-image: url(../images/diagnostics.webp); }
-
-.webp .services-banner { background-image: url(../images/services-banner.webp); }
-
-.webp .services-promo { background-image: url(../images/services-promo.webp); }
-
-.webp .reviews-service__slider-grade { background-image: url(../images/rating.webp); }
-
-.webp .about-video__link { background-image: url(../images/about-video-bg.webp); }
-
-@media (max-width: 1200px) {
-
-  .webp .services-promo { background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url(../images/services-promo.webp); background-image: -o-linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/services-promo.webp); background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/services-promo.webp); }
 }
