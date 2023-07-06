@@ -11,6 +11,7 @@
 -   Вопросы и ответы [https://kirkusik.github.io/dobrota/faq.html]
 -   Контакты [https://kirkusik.github.io/dobrota/contacts.html]
 -   Все доктора [https://kirkusik.github.io/dobrota/doctors.html]
+-   Один доктор [https://kirkusik.github.io/dobrota/single-doctor.html]
 
 # Gulp + WebPack + Babel
 
