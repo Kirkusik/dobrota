@@ -1,0 +1,52 @@
+.other-doctors {
+    background-color: #fff;
+    padding-bottom: 108px;
+    text-align: center;
+}
+
+.other-doctors__title-doc {
+    color: #624696;
+    @include fz(32, 18);
+    font-weight: 600;
+    line-height: 125%;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 43px;
+}
+
+.other-doctors__slider-wrapper {
+    list-style: none;
+    padding-left: 0;
+}
+
+.other-doctors__title {
+    margin-top: 25px;
+    margin-bottom: 11px;
+    color: #624696;
+    @include fz(18, 26);
+    font-weight: 700;
+    line-height: 125%;
+    text-transform: uppercase;
+}
+
+.other-doctors__text {
+    margin: 0;
+    color: #1b2948;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 138%;
+}
+
+.other-doctors__img {
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: top center;
+    width: 100%;
+    @include mq(992) {
+        height: 600px;
+    }
+
+    @include mq(576) {
+        height: 480px;
+    }
+}

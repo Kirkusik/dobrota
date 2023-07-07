@@ -1,0 +1,44 @@
+.doctor-description {
+    background-color: #fff;
+    padding-top: 120px;
+    padding-bottom: 123px;
+
+    @include mq(1200) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    @include mq(768) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    @include mq(576) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.doctor-description__title {
+    margin-top: 0;
+    margin-bottom: 44px;
+    color: #624696;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 125%;
+    text-transform: uppercase;
+    @include mq(1200) {
+        margin-bottom: 30px;
+    }
+}
+
+.doctor-description__text {
+    margin-top: 0;
+    margin-bottom: 44px;
+    color: #303a4c;
+    font-size: 17px;
+    line-height: 147%;
+    @include mq(1200) {
+        margin-bottom: 30px;
+    }
+}

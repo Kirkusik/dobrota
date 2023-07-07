@@ -83,6 +83,15 @@
 @import "layout/contacts/contacts.scss";
 @import "layout/contacts/map.scss";
 
+//DOCTORS
+@import "layout/doctors/doctors.scss";
+@import "layout/doctors/doctors-contacts.scss";
+
+//SINGLE-DOCTOR
+@import "layout/single-doctor/doctor-info.scss";
+@import "layout/single-doctor/doctor-description.scss";
+@import "layout/single-doctor/other-doctors.scss";
+
 // pagination
 @import "layout/pagination";
 
