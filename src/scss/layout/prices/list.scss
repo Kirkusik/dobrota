@@ -63,9 +63,18 @@
 .prices__filter-link {
 	color: #000;
 	@include fz(17, 14);
+	cursor: pointer;
 
 	&--active {
 		color: #f1821a;
+	}
+}
+
+.prices__item {
+	display: none;
+
+	&--active {
+		display: block;
 	}
 }
 

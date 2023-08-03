@@ -37,6 +37,7 @@
 
 .services__item {
 	display: grid;
+	align-content: start;
 }
 
 .service__title {
@@ -49,6 +50,7 @@
 
 	margin-top: 0;
 	margin-bottom: 30px;
+	min-height: 48px;
 }
 
 .service__img {

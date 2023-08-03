@@ -76,6 +76,10 @@
 .sale__item {
 	display: flex;
 	flex-direction: column;
+
+	&--hidden {
+		display: none;
+	}
 }
 
 .sale__item-img {

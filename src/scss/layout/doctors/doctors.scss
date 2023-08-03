@@ -1,66 +1,70 @@
 .all-doctors {
-    padding-top: 132px;
-    padding-bottom: 226px;
-    background-color: #ffffff;
+	padding-top: 132px;
+	padding-bottom: 226px;
+	background-color: #ffffff;
 
-    @include mq(1200) {
-        padding-top: 110px;
-        padding-bottom: 160px;
-    }
+	@include mq(1200) {
+		padding-top: 110px;
+		padding-bottom: 160px;
+	}
 
-    @include mq(992) {
-        padding-top: 80px;
-        padding-bottom: 100px;
-    }
+	@include mq(992) {
+		padding-top: 80px;
+		padding-bottom: 100px;
+	}
 
-    @include mq(480) {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
+	@include mq(480) {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
 }
 
 .all-doctors__list {
-    padding-left: 0;
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 40px;
-    row-gap: 110px;
-    @include mq(992) {
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 20px;
-        row-gap: 60px;
-    }
-    @include mq(480) {
-        grid-template-columns: 1fr;
-    }
+	padding-left: 0;
+	list-style: none;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 40px;
+	row-gap: 110px;
+	@include mq(992) {
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 20px;
+		row-gap: 60px;
+	}
+	@include mq(480) {
+		grid-template-columns: 1fr;
+	}
 }
 
 .all-doctors__list-item {
-    text-align: center;
+	text-align: center;
 }
 
 .all-doctors__title {
-    margin-top: 25px;
-    margin-bottom: 11px;
-    color: #624696;
-    @include fz(18, 26);
-    font-weight: 700;
-    line-height: 125%;
-    text-transform: uppercase;
+	margin-top: 25px;
+	margin-bottom: 11px;
+	color: #624696;
+	@include fz(18, 26);
+	font-weight: 700;
+	line-height: 125%;
+	text-transform: uppercase;
 }
 
 .all-doctors__text {
-    margin: 0;
-    color: #1b2948;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 138%;
+	margin: 0;
+	color: #1b2948;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 138%;
+
+	& a {
+		color: #624696;
+	}
 }
 
 .all-doctors__img {
-    border-radius: 10px;
-    object-fit: cover;
-    object-position: top center;
-    width: 100%;
+	border-radius: 10px;
+	object-fit: cover;
+	object-position: top center;
+	width: 100%;
 }

@@ -461,3 +461,11 @@
 	font-weight: 500;
 	line-height: 22px;
 }
+
+.single-cat {
+	padding-bottom: 60px;
+
+	& .services {
+		margin-top: 0;
+	}
+}

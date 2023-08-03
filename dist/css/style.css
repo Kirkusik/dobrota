@@ -830,6 +830,14 @@ template {
   line-height: 22px;
 }
 
+.single-cat {
+  padding-bottom: 60px;
+}
+
+.single-cat .services {
+  margin-top: 0;
+}
+
 /**
  * Swiper 8.4.7
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -1122,6 +1130,12 @@ template {
   display: none;
 }
 
+.page-header__nav {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .header-menu {
   padding-left: 0;
   margin: 0;
@@ -1129,16 +1143,29 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-column-gap: 20px;
      -moz-column-gap: 20px;
           column-gap: 20px;
 }
 
-.header-menu__link {
+.header-menu li {
+  position: relative;
+}
+
+.header-menu li:hover > .sub-menu {
+  display: block;
+}
+
+.header-menu a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 6px 10px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   font-weight: 500;
   font-size: 15px;
   line-height: 22px;
@@ -1149,10 +1176,40 @@ template {
   transition: color 0.5s;
 }
 
-.header-menu__link--active,
-.header-menu__link:hover,
-.header-menu__link:focus {
+.header-menu a--active,
+.header-menu a:hover,
+.header-menu a:focus {
   color: #f1821a;
+}
+
+.sub-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  padding-left: 0;
+  margin: 0;
+  list-style-type: none;
+  background-color: #fff;
+}
+
+.sub-menu .sub-menu {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  display: none;
+}
+
+.sub-menu li {
+  padding: 4px 10px;
+}
+
+.sub-menu li:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.sub-menu li:hover .sub-menu {
+  display: block;
 }
 
 .page-header__tel {
@@ -1163,6 +1220,7 @@ template {
   border: 2px solid #624696;
   border-radius: 10px;
   padding: 14px 16px;
+  margin-right: 16px;
   -webkit-transition: color 0.5s, border-color 0.5s;
   -o-transition: color 0.5s, border-color 0.5s;
   transition: color 0.5s, border-color 0.5s;
@@ -1227,6 +1285,7 @@ template {
   max-width: 100%;
   overflow: hidden;
   position: relative;
+  z-index: -1;
 }
 
 .home-intro__slider-stats {
@@ -1358,6 +1417,8 @@ template {
 .services__item {
   display: -ms-grid;
   display: grid;
+  -ms-flex-line-pack: start;
+      align-content: start;
 }
 
 .service__title {
@@ -1369,6 +1430,7 @@ template {
   color: #624696;
   margin-top: 0;
   margin-bottom: 30px;
+  min-height: 48px;
 }
 
 .service__img {
@@ -3392,6 +3454,10 @@ template {
           flex-direction: column;
 }
 
+.sale__item--hidden {
+  display: none;
+}
+
 .sale__item-img {
   border-radius: 10px;
   -o-object-fit: cover;
@@ -3466,10 +3532,19 @@ template {
 .prices__filter-link {
   color: #000;
   font-size: calc(14px + (17 - 14) * (100vw - 320px) / (1920 - 320));
+  cursor: pointer;
 }
 
 .prices__filter-link--active {
   color: #f1821a;
+}
+
+.prices__item {
+  display: none;
+}
+
+.prices__item--active {
+  display: block;
 }
 
 .prices__item-title {
@@ -3627,6 +3702,7 @@ template {
 }
 
 .single-sale__img {
+  width: 100%;
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
@@ -4050,14 +4126,14 @@ template {
           column-gap: 30px;
 }
 
-.contacts__form-wrapper form :first-child,
-.contacts__form-wrapper form :nth-child(6),
-.contacts__form-wrapper form :nth-child(7) {
+.contacts__form-wrapper form h3,
+.contacts__form-wrapper form :nth-child(7),
+.contacts__form-wrapper form :nth-child(8) {
   -ms-grid-column-span: 2;
   grid-column: span 2;
 }
 
-.contacts__form-wrapper form :nth-child(7) {
+.contacts__form-wrapper form :nth-child(8) {
   -ms-grid-column-align: center;
       justify-self: center;
 }
@@ -4107,6 +4183,7 @@ template {
 
 .map__iframe {
   width: 100%;
+  display: block;
 }
 
 .all-doctors {
@@ -4148,6 +4225,10 @@ template {
   font-size: 16px;
   font-weight: 500;
   line-height: 138%;
+}
+
+.all-doctors__text a {
+  color: #624696;
 }
 
 .all-doctors__img {
@@ -4233,7 +4314,7 @@ template {
   padding-bottom: 123px;
 }
 
-.doctor-description__title {
+.doctor-description h2 {
   margin-top: 0;
   margin-bottom: 44px;
   color: #624696;
@@ -4243,12 +4324,20 @@ template {
   text-transform: uppercase;
 }
 
-.doctor-description__text {
+.doctor-description p {
   margin-top: 0;
   margin-bottom: 44px;
   color: #303a4c;
   font-size: 17px;
   line-height: 147%;
+}
+
+.doctor-description ul {
+  color: #303a4c;
+  font-size: 17px;
+  line-height: 147%;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .other-doctors {
@@ -4416,14 +4505,19 @@ template {
   list-style-type: none;
 }
 
-.page-footer__list-item {
+.page-footer__list li {
   font-size: 15px;
   line-height: 147%;
   color: #edf0ff;
 }
 
-.page-footer__list-link {
+.page-footer__list a {
   color: inherit;
+}
+
+.page-footer__list a:hover,
+.page-footer__list a:focus {
+  opacity: 0.8;
 }
 
 .copyright {
@@ -4984,11 +5078,11 @@ template {
     padding-bottom: 100px;
   }
 
-  .doctor-description__title {
+  .doctor-description h2 {
     margin-bottom: 30px;
   }
 
-  .doctor-description__text {
+  .doctor-description p {
     margin-bottom: 30px;
   }
 
@@ -5055,10 +5149,19 @@ template {
     right: 0;
     top: 94px;
     width: 100%;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
     padding: 30px 20px;
     background-color: #fff5eb;
     -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .header-menu a {
+    width: 100%;
   }
 
   .header-menu {
@@ -5069,6 +5172,19 @@ template {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+
+  .sub-menu {
+    position: static;
+    background-color: transparent;
+  }
+
+  .sub-menu .sub-menu {
+    position: static;
+  }
+
+  .sub-menu li:not(:last-child) {
+    border-bottom: none;
   }
 
   .page-header__tel {
@@ -5881,9 +5997,9 @@ template {
     margin-top: 40px;
   }
 
-  .contacts__form-wrapper form :first-child,
-  .contacts__form-wrapper form :nth-child(6),
-  .contacts__form-wrapper form :nth-child(7) {
+  .contacts__form-wrapper form h3,
+  .contacts__form-wrapper form :nth-child(7),
+  .contacts__form-wrapper form :nth-child(8) {
     -ms-grid-column-span: 1;
     grid-column: span 1;
   }
