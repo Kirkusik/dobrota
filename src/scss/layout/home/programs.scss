@@ -1,13 +1,9 @@
 .home-programs {
-	padding-top: 180px;
-	padding-bottom: 180px;
+	padding-top: 120px;
+	padding-bottom: 120px;
 	background-color: #e69d59;
 
 	@include mq(1200) {
-		padding-top: 140px;
-		padding-bottom: 140px;
-	}
-	@include mq(992) {
 		padding-top: 100px;
 		padding-bottom: 100px;
 	}

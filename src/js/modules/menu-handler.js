@@ -4,6 +4,6 @@ export default function menuHandler() {
 
 	menuToogleBtn.addEventListener("click", () => {
 		pageNav.classList.toggle("page-header__nav--active");
-		document.body.classList.toggle("page__body--no-scroll");
+		document.body.classList.toggle("page__body--menu-open");
 	});
 }

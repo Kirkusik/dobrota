@@ -13,6 +13,10 @@
 .order-form__label {
 	display: flex;
 	margin-bottom: 16px;
+
+	& span {
+		width: 100%;
+	}
 }
 
 .order-form__element {

@@ -34,7 +34,6 @@
 	border-radius: 50%;
 	object-fit: cover;
 	align-self: center;
-	height: auto;
 
 	@include mq(992) {
 		display: none;

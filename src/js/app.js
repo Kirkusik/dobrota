@@ -21,4 +21,23 @@ document.addEventListener("DOMContentLoaded", function (event) {
     createMoreServicesSlider(Swiper);
     createOtherDoctorsSlider(Swiper);
     menuHandler();
+
+
+
+    document.addEventListener('click', (evt) => {
+
+        if (evt.target.closest(".pop-up-order")) {
+            const popUp = document.querySelector(".pop-up-wrapper");
+            popUp.classList.add("pop-up-wrapper--active");
+            const body = document.body;
+            body.classList.add("page__body--no-scroll");
+
+            document.querySelector(".pop-up-close").addEventListener("click", () => {
+                popUp.classList.remove("pop-up-wrapper--active");
+                body.classList.remove("page__body--no-scroll");
+            })
+        }
+
+
+    })
 });

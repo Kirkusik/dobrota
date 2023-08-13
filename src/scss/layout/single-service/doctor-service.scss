@@ -1,108 +1,112 @@
 .doctor-service {
-    background-color: #fff;
+	background-color: #fff;
+	padding-bottom: 30px;
 }
 
 .doctor-service__wrapper {
-    background-color: #f5f5f5;
-    border-radius: 20px;
-    position: relative;
-    padding-top: 123px;
-    padding-bottom: 79px;
-    display: grid;
-    grid-template-columns: 1fr 436px;
-    overflow: hidden;
-    @include mq(1200) {
-        padding-top: 80px;
-        padding-bottom: 50px;
-    }
-    @include mq(992) {
-        padding-top: 70px;
-        padding-bottom: 40px;
-        grid-template-columns: 1fr 1fr;
-    }
-    @include mq(768) {
-        grid-template-columns: 1fr;
-        padding-top: 40px;
-        text-align: center;
-        row-gap: 40px;
-    }
-    @include mq(576) {
-        row-gap: 30px;
-        border-radius: 0;
-    }
+	background-color: #f5f5f5;
+	border-radius: 20px;
+	position: relative;
+	padding-top: 123px;
+	padding-bottom: 79px;
+	display: grid;
+	grid-template-columns: 1fr 436px;
+	overflow: hidden;
+
+	@include mq(1200) {
+		padding-top: 80px;
+		padding-bottom: 50px;
+	}
+	@include mq(992) {
+		padding-top: 70px;
+		padding-bottom: 40px;
+		grid-template-columns: 1fr 1fr;
+	}
+	@include mq(768) {
+		grid-template-columns: 1fr;
+		padding-top: 40px;
+		text-align: center;
+		row-gap: 40px;
+	}
+	@include mq(576) {
+		row-gap: 30px;
+		border-radius: 0;
+	}
 }
 
 .doctor-service__img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    object-fit: cover;
-    object-position: top center;
-    @include mq(992) {
-        width: 50%;
-    }
-    @include mq(768) {
-        width: 100%;
-        height: 300px;
-        position: static;
-        object-fit: contain;
-    }
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	object-fit: cover;
+	object-position: top center;
+	@include mq(992) {
+		width: 50%;
+	}
+	@include mq(768) {
+		width: 100%;
+		height: 300px;
+		position: static;
+		object-fit: contain;
+	}
 }
 
 .doctor-service__info {
-    padding-left: 57px;
-    padding-right: 21px;
-    @include mq(992) {
-        padding-left: 20px;
-        padding-right: 25px;
-    }
+	padding-left: 57px;
+	padding-right: 21px;
+	@include mq(992) {
+		padding-left: 20px;
+		padding-right: 25px;
+	}
 }
 
 .doctor-service__title {
-    font-weight: 600;
-    @include fz(32, 18);
-    line-height: 125%;
-    text-transform: uppercase;
-    color: #624696;
-    margin-top: 0;
-    margin-bottom: 43px;
-    @include mq(1200) {
-        margin-bottom: 35px;
-    }
-    @include mq(992) {
-        margin-bottom: 20px;
-    }
+	font-weight: 600;
+	@include fz(32, 18);
+	line-height: 125%;
+	text-transform: uppercase;
+	color: #624696;
+	margin-top: 0;
+	margin-bottom: 43px;
+	@include mq(1200) {
+		margin-bottom: 35px;
+	}
+	@include mq(992) {
+		margin-bottom: 20px;
+	}
 }
 
 .doctor-service__text {
-    @include fz(17, 14);
-    line-height: 147%;
-    color: #303a4c;
-    margin-top: 0;
-    margin-bottom: 49px;
-    @include mq(1200) {
-        margin-bottom: 35px;
-    }
-    @include mq(992) {
-        margin-bottom: 20px;
-    }
+	@include fz(17, 14);
+	line-height: 147%;
+	color: #303a4c;
+	margin-top: 0;
+	margin-bottom: 49px;
+	@include mq(1200) {
+		margin-bottom: 35px;
+	}
+	@include mq(992) {
+		margin-bottom: 20px;
+	}
 }
 
 .doctor-service__btn {
-    font-weight: 600;
-    @include fz(17, 14);
-    line-height: 21px;
-    text-transform: uppercase;
-    color: #ffffff;
-    background-color: #979797;
-    border: none;
-    border-radius: 10px;
-    padding: 20px 40px;
-    @include mq(1200) {
-        padding: 15px 35px;
-    }
-    @include mq(576) {
-        padding: 10px 20px;
-    }
+	font-weight: 600;
+	@include fz(17, 14);
+	line-height: 21px;
+	text-transform: uppercase;
+	color: #ffffff;
+	background-color: #979797;
+	border: none;
+	border-radius: 10px;
+	padding: 20px 40px;
+	cursor: pointer;
+
+	@include mq(1200) {
+		padding: 15px 35px;
+	}
+	@include mq(576) {
+		padding: 10px 20px;
+	}
 }

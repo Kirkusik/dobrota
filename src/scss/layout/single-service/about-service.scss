@@ -17,64 +17,48 @@
 	}
 }
 
-.about-service__container {
-	display: grid;
-	grid-template-columns: 1fr 360px;
-	gap: 40px;
+// .about-service__container {
+// 	display: grid;
+// 	grid-template-columns: 1fr 360px;
+// 	gap: 40px;
 
-	@include mq(1200) {
-		gap: 20px;
-		grid-template-columns: 1fr 300px;
+// 	@include mq(1200) {
+// 		gap: 20px;
+// 		grid-template-columns: 1fr 300px;
+// 	}
+// 	@include mq(992) {
+// 		grid-template-columns: 1fr;
+// 	}
+// }
+
+.about-service__wrapper {
+	& h2 {
+		font-weight: 500;
+		@include fz(32, 24);
+		line-height: 125%;
+		color: #624696;
 	}
-	@include mq(992) {
-		grid-template-columns: 1fr;
+
+	& h3 {
+		font-weight: 500;
+		@include fz(28, 20);
+		line-height: 125%;
+		color: #624696;
 	}
-}
 
-.about-service__img {
-	height: auto;
-
-	@include mq(370) {
-		width: 280px;
-		display: block;
-		margin: 0 auto;
+	& p {
+		@include fz(17, 14);
+		line-height: 147%;
+		color: #303a4c;
 	}
-}
 
-.about-service__title {
-	font-weight: 500;
-	@include fz(32, 18);
-	line-height: 125%;
-	color: #624696;
-	margin-top: 51px;
-	margin-bottom: 15px;
+	& ul {
+		@extend .checked-list;
 
-	@include mq(1200) {
-		margin-top: 35px;
+		& li {
+			@extend .checked-list__item;
+		}
 	}
-	@include mq(992) {
-		margin-top: 25px;
-	}
-	@include mq(768) {
-		margin-top: 20px;
-	}
-}
-
-.about-service__symptoms {
-	margin-top: 29px;
-	margin-bottom: 20px;
-}
-
-.about-service__text {
-	@include fz(17, 14);
-	line-height: 147%;
-	color: #303a4c;
-	margin-top: 0;
-	margin-bottom: 0;
-}
-
-.about-service__item {
-	color: #616161;
 }
 
 .order-visit {

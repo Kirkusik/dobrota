@@ -33,6 +33,10 @@
 	}
 }
 
+.last-post {
+	display: grid;
+}
+
 .last-post__link {
 	display: grid;
 }
@@ -70,6 +74,6 @@
 	line-height: 1.25;
 	letter-spacing: 0.5px;
 
-	margin-top: 0;
+	margin-top: auto;
 	margin-bottom: 0;
 }

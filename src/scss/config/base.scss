@@ -29,23 +29,27 @@
 	font-size: 16px;
 	line-height: 150%;
 	color: #000;
-
+	overflow-x: hidden;
 	background-color: #fff5eb;
 
 	&--no-scroll {
 		overflow: hidden;
 		position: relative;
 
-		&::after {
+		&::before {
 			content: "";
-			position: absolute;
+			position: fixed;
 			left: 0;
 			top: 0;
 			right: 0;
 			bottom: 0;
-			background-color: rgba($color: #000000, $alpha: 0.35);
-			z-index: 0;
+			background-color: rgba($color: #000000, $alpha: 0.75);
+			z-index: 2;
 		}
+	}
+
+	&--menu-open {
+		overflow: hidden;
 	}
 }
 
@@ -272,7 +276,11 @@
 	list-style: none;
 	display: flex;
 	justify-content: center;
-	gap: 32px;
+	gap: 10px 32px;
+
+	@include mq(768) {
+		flex-wrap: wrap;
+	}
 }
 
 .breadcrumbs__item {
@@ -317,11 +325,14 @@
 	color: #624696;
 	margin-top: 0;
 	margin-bottom: 0;
+
+	word-break: break-word;
 }
 
 .link-w-arrow {
 	color: #f1821a;
 	transition: color 0.2s;
+	cursor: pointer;
 
 	&:hover {
 		color: #624696;
@@ -384,7 +395,7 @@
 	width: 100%;
 
 	@include mq(992) {
-		height: 300px;
+		height: 200px;
 	}
 }
 

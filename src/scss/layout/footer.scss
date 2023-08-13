@@ -12,28 +12,20 @@
 }
 
 .page-footer__top {
-	padding-top: 120px;
-	padding-bottom: 150px;
+	padding-top: 60px;
+	padding-bottom: 40px;
 
 	display: grid;
 	grid-template-columns: auto repeat(3, 1fr);
 
-	@include mq(1200) {
-		padding-top: 80px;
-		padding-bottom: 120px;
-	}
 	@include mq(992) {
 		grid-template-columns: auto max-content;
 		row-gap: 40px;
 
-		padding-top: 60px;
-		padding-bottom: 80px;
+		padding-top: 40px;
 	}
 	@include mq(576) {
 		grid-template-columns: 1fr;
-
-		padding-top: 40px;
-		padding-bottom: 40px;
 	}
 }
 

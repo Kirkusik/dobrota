@@ -1,0 +1,41 @@
+.pop-up-wrapper {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 99;
+	// background-color: rgba($color: #000000, $alpha: 0.75);
+	justify-content: center;
+	align-items: center;
+	display: none;
+	max-height: 100vh;
+	overflow-y: auto;
+
+	&--active {
+		display: flex;
+	}
+}
+
+.pop-up-content {
+	background-color: #f3f9fd;
+	padding: 40px 20px 30px;
+	border-radius: 10px;
+	position: relative;
+
+	& form {
+		display: grid;
+	}
+}
+
+.pop-up-close {
+	background-color: transparent;
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	padding: 0;
+	border: none;
+	cursor: pointer;
+}

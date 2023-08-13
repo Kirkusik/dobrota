@@ -34,16 +34,16 @@
 			grid-template-columns: 100%;
 		}
 
-		& :first-child,
-		& :nth-child(6),
-		& :nth-child(7) {
+		& h2,
+		& :nth-child(7),
+		& :nth-child(8) {
 			grid-column: span 2;
 
 			@include mq(576) {
 				grid-column: span 1;
 			}
 		}
-		& :nth-child(7) {
+		& :nth-child(8) {
 			justify-self: center;
 		}
 	}
