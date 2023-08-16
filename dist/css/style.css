@@ -554,6 +554,31 @@ template {
   color: #624696;
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 40%;
+  width: 32px;
+  height: 32px;
+  z-index: 3;
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.swiper-button-prev {
+  right: 0;
+  background-image: url(../images/svg/slider-arrow-right.svg);
+}
+
+.swiper-button-next {
+  left: 0;
+  background-image: url(../images/svg/slider-arrow-left.svg);
+}
+
 .swiper-pagination {
   display: -ms-grid;
   display: grid;
@@ -632,7 +657,7 @@ template {
 
 .intro {
   padding-top: 60px;
-  padding-bottom: 116px;
+  padding-bottom: 80px;
 }
 
 .breadcrumbs {
@@ -1195,6 +1220,7 @@ template {
   top: 100%;
   left: 0;
   display: none;
+  z-index: 2;
   padding-left: 0;
   margin: 0;
   list-style-type: none;
@@ -2458,8 +2484,8 @@ template {
 
 .about-service {
   background-color: #ffffff;
-  padding-top: 136px;
-  padding-bottom: 78px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .about-service__wrapper h2 {
@@ -4624,8 +4650,8 @@ template {
   }
 
   .intro {
-    padding-top: 55px;
-    padding-bottom: 90px;
+    padding-top: 50px;
+    padding-bottom: 60px;
   }
 
   .rotated-wrapper {
@@ -4872,7 +4898,7 @@ template {
   }
 
   .about-service {
-    padding-top: 100px;
+    padding-top: 60px;
     padding-bottom: 60px;
   }
 
@@ -5131,11 +5157,6 @@ template {
 }
 
 @media (max-width: 992px) {
-  .intro {
-    padding-top: 50px;
-    padding-bottom: 70px;
-  }
-
   .rotated-wrapper {
     -ms-grid-columns: 100%;
     grid-template-columns: 100%;
@@ -5415,11 +5436,6 @@ template {
 
   .faq-consultation__text {
     margin-bottom: 28px;
-  }
-
-  .about-service {
-    padding-top: 80px;
-    padding-bottom: 140px;
   }
 
   .order-visit {
@@ -5806,8 +5822,8 @@ template {
   }
 
   .about-service {
-    padding-top: 60px;
-    padding-bottom: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   .order-visit__text {

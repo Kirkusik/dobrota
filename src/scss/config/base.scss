@@ -169,6 +169,33 @@
 	color: #624696;
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+	position: absolute;
+	top: 40%;
+	width: 32px;
+	height: 32px;
+	z-index: 3;
+
+	background-size: 28px 28px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: rgba($color: #fff, $alpha: 0.5);
+	border-radius: 5px;
+
+	cursor: pointer;
+}
+
+.swiper-button-prev {
+	right: 0;
+	background-image: url(../images/svg/slider-arrow-right.svg);
+}
+
+.swiper-button-next {
+	left: 0;
+	background-image: url(../images/svg/slider-arrow-left.svg);
+}
+
 .swiper-pagination {
 	display: grid;
 	justify-content: center;
@@ -253,16 +280,13 @@
 
 .intro {
 	padding-top: 60px;
-	padding-bottom: 116px;
+	padding-bottom: 80px;
 
 	@include mq(1200) {
-		padding-top: 55px;
-		padding-bottom: 90px;
-	}
-	@include mq(992) {
 		padding-top: 50px;
-		padding-bottom: 70px;
+		padding-bottom: 60px;
 	}
+
 	@include mq(768) {
 		padding-top: 40px;
 		padding-bottom: 40px;

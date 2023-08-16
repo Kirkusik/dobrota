@@ -1,19 +1,15 @@
 .about-service {
 	background-color: #ffffff;
-	padding-top: 136px;
-	padding-bottom: 78px;
+	padding-top: 80px;
+	padding-bottom: 80px;
 
 	@include mq(1200) {
-		padding-top: 100px;
+		padding-top: 60px;
 		padding-bottom: 60px;
 	}
-	@include mq(992) {
-		padding-top: 80px;
-		padding-bottom: 140px;
-	}
 	@include mq(768) {
-		padding-top: 60px;
-		padding-bottom: 80px;
+		padding-top: 40px;
+		padding-bottom: 40px;
 	}
 }
 
