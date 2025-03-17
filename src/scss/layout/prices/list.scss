@@ -138,5 +138,12 @@
 	margin-top: 0;
 	margin-bottom: 0;
 
-	grid-column: span 2;
+	@include mq(480) {
+		grid-column: span 2;
+	}
+}
+
+.prices__list-order {
+	padding: 6px 20px;
+	margin-top: auto;
 }

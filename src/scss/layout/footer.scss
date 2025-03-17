@@ -19,7 +19,7 @@
 	grid-template-columns: auto repeat(3, 1fr);
 
 	@include mq(992) {
-		grid-template-columns: auto max-content;
+		grid-template-columns: auto auto;
 		row-gap: 40px;
 
 		padding-top: 40px;
@@ -63,6 +63,15 @@
 	&:not(:first-child) {
 		padding-top: 26px;
 	}
+
+	& a {
+		color: #edf0ff;
+
+		&:hover,
+		&:focus {
+			opacity: 0.8;
+		}
+	}
 }
 
 .page-footer__title {
@@ -86,15 +95,11 @@
 		line-height: 147%;
 		color: #edf0ff;
 	}
+}
 
-	& a {
-		color: inherit;
-
-		&:hover,
-		&:focus {
-			opacity: 0.8;
-		}
-	}
+.page-footer__contacts {
+	display: grid;
+	row-gap: 10px;
 }
 
 .copyright {

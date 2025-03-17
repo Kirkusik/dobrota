@@ -62,8 +62,7 @@
         "webpack-stream": "^7.0.0"
     },
     "dependencies": {
-        "aos": "^2.3.4",
-        "inputmask": "^5.0.7",
+        "fslightbox": "^3.4.1",
         "swiper": "^8.4.5"
     }
 }

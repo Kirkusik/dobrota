@@ -1,94 +1,65 @@
 .doctor-service {
 	background-color: #fff;
 	padding-bottom: 30px;
+	padding-top: 30px;
+}
+
+.doctor-service__slider-wrapper {
+	padding-left: 0;
+	margin: 0;
+	list-style-type: none;
 }
 
 .doctor-service__wrapper {
 	background-color: #f5f5f5;
 	border-radius: 20px;
 	position: relative;
-	padding-top: 123px;
-	padding-bottom: 79px;
-	display: grid;
-	grid-template-columns: 1fr 436px;
-	overflow: hidden;
 
-	@include mq(1200) {
-		padding-top: 80px;
-		padding-bottom: 50px;
-	}
-	@include mq(992) {
-		padding-top: 70px;
-		padding-bottom: 40px;
-		grid-template-columns: 1fr 1fr;
-	}
-	@include mq(768) {
-		grid-template-columns: 1fr;
-		padding-top: 40px;
-		text-align: center;
-		row-gap: 40px;
-	}
-	@include mq(576) {
-		row-gap: 30px;
-		border-radius: 0;
-	}
+	margin: 0;
+
+	display: grid;
 }
 
 .doctor-service__img {
-	position: absolute;
-	top: 0;
-	right: 0;
-	height: 100%;
+	width: 100%;
 	object-fit: cover;
 	object-position: top center;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+
 	@include mq(992) {
-		width: 50%;
+		height: 350px;
 	}
 	@include mq(768) {
-		width: 100%;
-		height: 300px;
-		position: static;
-		object-fit: contain;
+		height: 500px;
+	}
+	@include mq(480) {
+		height: 400px;
 	}
 }
 
 .doctor-service__info {
-	padding-left: 57px;
-	padding-right: 21px;
-	@include mq(992) {
-		padding-left: 20px;
-		padding-right: 25px;
-	}
+	padding: 20px;
 }
 
 .doctor-service__title {
+	margin-top: 0;
+	margin-bottom: 32px;
+
 	font-weight: 600;
 	@include fz(32, 18);
 	line-height: 125%;
 	text-transform: uppercase;
 	color: #624696;
-	margin-top: 0;
-	margin-bottom: 43px;
-	@include mq(1200) {
-		margin-bottom: 35px;
-	}
-	@include mq(992) {
-		margin-bottom: 20px;
-	}
 }
 
 .doctor-service__text {
+	margin-top: 0;
+	margin-bottom: 0;
+
 	@include fz(17, 14);
 	line-height: 147%;
 	color: #303a4c;
-	margin-top: 0;
-	margin-bottom: 49px;
-	@include mq(1200) {
-		margin-bottom: 35px;
-	}
-	@include mq(992) {
-		margin-bottom: 20px;
-	}
 }
 
 .doctor-service__btn {
@@ -108,5 +79,35 @@
 	}
 	@include mq(576) {
 		padding: 10px 20px;
+	}
+}
+
+.doctor-service__slider-btn {
+	position: absolute;
+	bottom: 45%;
+	z-index: 2;
+	padding: 0;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+
+	&[disabled] {
+		opacity: 0.6;
+		cursor: initial;
+	}
+
+	@include mq(640) {
+		& svg {
+			width: 60px;
+			height: 60px;
+		}
+	}
+
+	&--prev {
+		left: 0;
+	}
+
+	&--next {
+		right: 0;
 	}
 }

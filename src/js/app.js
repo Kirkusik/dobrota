@@ -6,12 +6,15 @@ import createHomeBannerSlider from "./modules/home-banner-slider";
 import createReviewServiceSlider from "./modules/reviews-service";
 import createMoreServicesSlider from "./modules/more-services";
 import createOtherDoctorsSlider from "./modules/other-doctors";
-import createEquipSlider from "./modules/equip-slider";
+// import createEquipSlider from "./modules/equip-slider";
+import "fslightbox";
+import serviceDoctorSlider from "./modules/service-doctor-slider";
 // import AOS from "aos";
 
 // AOS.init({
 //     duration: 300,
 // });
+
 Swiper.use([Navigation, Pagination, Autoplay, EffectFade]);
 
 document.addEventListener("DOMContentLoaded", function (event) {
@@ -21,7 +24,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	createReviewServiceSlider(Swiper);
 	createMoreServicesSlider(Swiper);
 	createOtherDoctorsSlider(Swiper);
-	createEquipSlider(Swiper);
+	// createEquipSlider(Swiper);
+	serviceDoctorSlider(Swiper);
 	menuHandler();
 
 	document.addEventListener("click", (evt) => {
